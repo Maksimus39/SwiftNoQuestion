@@ -155,3 +155,62 @@
 //print("Ваш полное имя: \(name), ваш вес: \(weight) кг")
 
 
+
+
+
+// ------------------------------------------------- Логический оператор if --------------------------------------------------------------------
+
+
+//print("Введите имя?")
+//let name = readLine()!
+//
+//print("Введите ваш возраст?")
+//let age = Int(readLine()!)!
+//
+//if age >= 18 {
+//    print("\(name) может ездить за рулём")
+//}else{
+//    print("\(name), подрасти ка ещё дружище")
+//}
+
+
+// 1
+
+//print("Введите два числа")
+//let one = readLine()!
+//let two = readLine()!
+//
+//if one > two {
+//    print(one)
+//    print(two)
+//}else {
+//    print(two)
+//    print(one)
+//}
+
+
+// 2
+
+//print("Введите ваш год рождения")
+//let age = Int(readLine()!)!
+//
+//if age < 1900 || age > 2025 {
+//    print("Не может такого быть")
+//}else {
+//    print("Спасибо")
+//}
+
+
+
+// 3
+
+//print("Введите ваш любимый язык программирования")
+//let language = readLine()!
+//
+//if language == "Swift" || language == "SWIFT"{
+//    print("Класс я тоже люблю \(language)")
+//}else{
+//    print("\(language) конечно не плох, но Swift лучше")
+//}
+
+
