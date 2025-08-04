@@ -213,4 +213,38 @@
 //    print("\(language) конечно не плох, но Swift лучше")
 //}
 
+// 4
 
+//print("Идёт ли дождик?")
+//var question:String = readLine()!
+//if question == "Да" {
+//    print("Не забудь зонтик")
+//}else{
+//    print("Светит ли солнце")
+//}
+//var question2:String = readLine()!
+//if question2 == "Да" {
+//    print("Не забудь солнечные очки")
+//}else {
+//    print("Хорошей прогулки")
+//}
+
+
+// 5
+
+//print("""
+//    1 - радио
+//    2 - телевизор
+//    3 - отмена
+//    """)
+//
+//let variable:String = readLine()!
+//if variable == "1" {
+//    print("Включаю радио")
+//}else if variable == "2" {
+//    print("Включаю телевизор")
+//}else if variable == "3" {
+//    print("До свидания")
+//}else{
+//    print("Ошибка!")
+//}
