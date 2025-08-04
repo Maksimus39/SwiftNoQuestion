@@ -248,3 +248,117 @@
 //}else{
 //    print("Ошибка!")
 //}
+
+
+// Оператор Switch case
+
+//print("""
+//    1 - радио
+//    2 - телевизор
+//    3 - отмена
+//    """)
+//
+//let variable:String = readLine()!
+//
+//switch variable {
+//case "1" :  print("Включаю радио")
+//case "2" :  print("Включаю телевизор")
+//case "3" : print("До свидания")
+//default : print("Ошибка!")
+//}
+
+
+//print("""
+//    Меню:
+//    1 - первое
+//    2 - второе
+//    3 - третье
+//    """)
+//let menu = readLine()!
+//
+//print("""
+//    выберите вариант:
+//    1 - с мясом
+//    2 - без мяса
+//    """)
+//let meat = readLine()!
+//
+//switch menu {
+//case "1" where meat == "1" : print("Ваш заказ борщ")
+//case "1" where meat == "2" : print("Ваш заказ тыквенный суп")
+//case "2" where meat == "1" : print("Ваш заказ треска с гречкой")
+//case "2" where meat == "2" : print("Ваш заказ запеканка")
+//case "3": print("Ваш заказ компот")
+//default:print("Error")
+//}
+
+
+// 1
+
+//print("Введите порядковый номер дня недели")
+//let numDay = readLine()!
+//
+//switch numDay {
+//case  "1" : print("Понедельник")
+//case  "2" : print("Вторник")
+//case  "3" : print("Среда")
+//case  "4" : print("Четверг")
+//case  "5" : print("Пятница")
+//case  "6" : print("Суббота")
+//case  "7" : print("Воскресенье")
+//default:print("Error")
+//}
+
+
+// 2
+
+//print("Введите ваш возраст?")
+//let age:Int = Int(readLine()!)!
+//print("Есть ли у вас билет на самолёт?")
+//let ticket:String = readLine()!
+//
+// switch ticket {
+// case "да" :
+//     if age >= 18 {
+//         print("Вы можете полететь")
+//     }else{
+//         print("Вы не можете полететь")
+//     }
+// default:
+//     print("Вы не можете полететь")
+//}
+
+
+
+// 3
+
+//print("""
+//    Меню:
+//    1 - первое
+//    2 - второе
+//    3 - третье
+//    """)
+//var menu = readLine()!
+//var meat = ""
+//
+//if menu == "1" || menu == "2" {
+//    print("""
+//        выберите вариант:
+//        1 - с мясом
+//        2 - без мяса
+//        """)
+//    
+//    meat = readLine()!
+//}
+//
+//
+//
+//switch menu {
+//case "1" where meat == "1" : print("Ваш заказ борщ")
+//case "1" where meat == "2" : print("Ваш заказ тыквенный суп")
+//case "2" where meat == "1" : print("Ваш заказ треска с гречкой")
+//case "2" where meat == "2" : print("Ваш заказ запеканка")
+//case "3": print("Ваш заказ компот")
+//default:print("Error")
+//}
+
