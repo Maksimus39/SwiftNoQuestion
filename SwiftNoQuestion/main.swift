@@ -460,7 +460,7 @@
 // Диаппазоны
 
 //var range = 1..<50
-// 
+//
 //for r in range {
 //    print(r)
 //}
@@ -502,3 +502,97 @@
 //print("Введите ваше имя:")
 //let name = readLine()!
 //print("В вашем имени \(name.count) символов")
+
+
+// -------------------------------------------------- Цикл for in ---------------------------------------------------------------------------
+
+
+//let privet: String = "Привет"
+//for i in 1...100 {
+//    print(privet)
+//}
+
+
+//let name = "Максим"
+//for _ in 1...1000 {
+//    print(name)
+//}
+
+//for day in 1...10 {
+//    print("Я программирую уже \(day) дней")
+//}
+
+
+//for i in 1...90 {print(i * i)}
+
+//for _ in 1...2 {for char in "Privet" {print(char)}}
+
+
+// 1
+
+//print("Пользователь, введите ваше имя?")
+//var name: String = readLine()!
+//
+//for _ in 1...7 {
+//    print(name)
+//}
+
+
+// 2
+
+//print("Пользователь, введите ваше имя?")
+//var name: String = readLine()!
+//for char in name {
+//    print(char)
+//}
+
+
+// 3
+
+//print("Пользователь, введите ваше имя?")
+//let name: String = readLine()!
+//print("Сколько раз вывести имя?")
+//let count = Int(readLine()!)
+//
+//if let count {
+//    for _ in 1...count {
+//        print(name)
+//    }
+//}
+
+
+// 4
+
+//print("Пользователь, введите ваше имя?")
+//let name: String = readLine()!
+//print("""
+//    1 - построчно
+//    2 - целиком
+//    """)
+//let answer = readLine()
+//print("Пользователь, сколько раз вывести ваше имя?")
+//let count = Int(readLine()!)
+//
+//if let count {
+//    if answer == "1" {
+//        for _ in 1...count {
+//            for i in name {
+//                print(i)
+//            }
+//        }
+//    }
+//    else if answer == "2" {
+//        for _ in 1...count {
+//            print(name)
+//        }
+//    }
+//}
+
+
+// 5
+
+//print("Введите число от 1 до 9")
+//let number = Int(readLine()!)!
+//for i in 1...10 {  // Обычно таблица умножения до 10
+//    print("\(number) × \(i) = \(number * i)")
+//}
