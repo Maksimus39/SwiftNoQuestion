@@ -596,3 +596,32 @@
 //for i in 1...10 {  // Обычно таблица умножения до 10
 //    print("\(number) × \(i) = \(number * i)")
 //}
+
+
+// ----------------------------------------------- Цикл while ----------------------------------------------------
+
+
+//let password = "Qwerty123"
+//var attempt = ""
+//while attempt != password {
+//    print("Введите пароль")
+//    attempt = readLine()!
+//}
+//print("Добро пожаловать!")
+
+
+
+// 1
+
+//var sum:Int = 0
+//let data = 100
+//
+//while sum < 100 {
+//    print("Введите число:")
+//    let number = Int(readLine()!)!
+//    sum = sum + number
+//    if sum == 100 {
+//        print("необходимо добавить значение")
+//    }
+//}
+//print("Условие достигло ста")
