@@ -396,3 +396,59 @@
 //var darcMode = Bool(readLine()!)!
 //color = darcMode ? "black" : "light"
 //print("цвет \(color)")
+
+
+
+// ---------------------------------------------- Опциональные типы данных --------------------------------------------
+
+
+// primer
+
+//var a = "Dima"
+//var b = Int(a)
+//print(b)
+
+//var a:Int?
+//var d = a ?? 101010
+//print(d)
+
+
+// 1
+
+//print("Сколько вам лет?")
+//var age = readLine()!
+//var ageMutation = Int(age)!
+//print("Через год вам будет \(ageMutation + 1) лет")
+
+
+// 2
+
+//print("Сколько вам лет?")
+//var age = readLine()!
+//var ageMut:Int! = Int(age)
+//print("Через год вам будет \(ageMut + 1) лет")
+
+
+// 3
+
+//print("Сколько вам лет?")
+//var age = readLine()
+//if let ageMut = Int(age!) {
+//    print("Через год вам будет \(ageMut + 1) лет")
+//}
+
+
+// 4
+
+//print("Сколько вам лет?")
+//var age = Int(readLine()!)
+//if let age {
+//    print("Через год вам будет \(age + 1) лет")
+//}
+
+// 5
+
+//print("Сколько вам лет?")
+//var age = Int(readLine()!)
+//var c = age ?? 0
+//print("Через год вам будет \(c + 1) лет")
