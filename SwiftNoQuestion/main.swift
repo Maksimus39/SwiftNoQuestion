@@ -347,7 +347,7 @@
 //        1 - с мясом
 //        2 - без мяса
 //        """)
-//    
+//
 //    meat = readLine()!
 //}
 //
@@ -362,3 +362,37 @@
 //default:print("Error")
 //}
 
+
+// ------------------------------------------- Тернарный оператор ------------------------------------------
+
+//print("Введите ваш возраст?")
+//var test = 18
+//var age = Int(readLine()!)!
+//
+//age >= 0 ? print("Да") : print("Нет")
+
+
+// primer
+
+//var color:String
+//var darkMode = true
+//color = darkMode  ? "dark" : "white"
+//print(color)
+
+
+// 1
+
+//var color:String
+//print("Включить тёмную тему?")
+//var darcMode = readLine()!
+//color = darcMode == "да" ? "black" : "light"
+//print("цвет \(color)")
+
+
+// 2
+
+//var color:String
+//print("Включить тёмную тему?")
+//var darcMode = Bool(readLine()!)!
+//color = darcMode ? "black" : "light"
+//print("цвет \(color)")
