@@ -452,3 +452,53 @@
 //var age = Int(readLine()!)
 //var c = age ?? 0
 //print("Через год вам будет \(c + 1) лет")
+
+
+
+// ------------------------------------------------ Циклы и коллекции ---------------------------------------------------
+
+// Диаппазоны
+
+//var range = 1..<50
+// 
+//for r in range {
+//    print(r)
+//}
+//
+//print(range.count)
+//print(range.contains(3))
+//print(range.lowerBound)
+//print(range.upperBound)
+//print(range.min()!)
+//print(range.max()!)
+
+
+// -------------------------------------------- Строки как диаппазоны ----------------------------------------------------
+
+//var name = "Maksim"
+//print(name.count)
+//print(name.prefix(3))
+
+
+// 1
+
+//var age = 1799...1837
+//print("Годы жизни А.С.Пушкина \(age) годов")
+//print("Год рождния Пушкина \(age.lowerBound)")
+//print("Год смерти Пушкина \(age.upperBound)")
+
+// 2
+
+//var age = 1799...1837
+//print("Годы жизни А.С.Пушкина \(age) годов")
+//var patrioticWar = 1812
+//print("Пушкин жил во время Отечественной войны: \(age.contains(patrioticWar))")
+//var russianTurkishWar = 1877...1878
+//print("Пушкин жил во время русско-турецкой войны: \(age.contains(russianTurkishWar))")
+
+
+// 3
+
+//print("Введите ваше имя:")
+//let name = readLine()!
+//print("В вашем имени \(name.count) символов")
