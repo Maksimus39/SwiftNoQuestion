@@ -887,3 +887,126 @@
 //for i in dict1 {
 //    print(i)
 //}
+
+
+// -------------------------------------------- Function -------------------------------------------
+
+
+//func speedCalc (distance:Double, time:Double) -> Double {
+//   distance / time
+//}
+//
+//print(speedCalc(distance: 48.9, time: 23.9))
+
+
+// 1
+
+//func myName (name:String) -> String {
+//  return  "Привет, \(name)"
+//}
+//
+//print(myName(name: "Максим"))
+
+
+// 2
+
+//func mynameInput () -> String {
+//    print("Введите ваше имя?")
+//    let nameInput = readLine()!
+//    return "Привет, \(nameInput)!"
+//}
+//
+//print(mynameInput())
+
+
+
+// 3
+
+//func mynameInput () -> String {
+//    print("Введите ваше имя?")
+//    let nameInput = readLine()!
+//    return "Привет, \(nameInput)!"
+//}
+//
+//let name = mynameInput()
+//
+//print(name)
+
+
+// 4
+
+//func intNum (number: Int)  {
+//return print("""
+//     Вы ввели число \(number)
+//     Число  \(number + 1)
+//     Число  \(number - 1)
+//     """)
+//}
+//
+//intNum(number: 42)
+
+
+
+// 5
+
+//func creator (input: Array<Int>) -> Array<Int> {
+//    let arr = Set(input)
+//    let newArr = Array(arr)
+//    return newArr
+//}
+//
+//var newArr = creator(input: [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10])
+//print(newArr)
+
+
+
+// --------------------------------------------------- оператор имя параметра и ярлык -------------------------------
+
+//func speedCalc(_ d: Double, _ t: Double) -> Double {
+//    d/t
+//}
+//
+//print(speedCalc(18.5, 2.9234))
+
+
+// --------------------------------------------------- Неопределённое количество параметров функции  -------------------------------
+
+//func addition (_ numbers: Int...) -> Int {
+//    var sum = 0
+//    for i in numbers {
+//        sum += 1
+//    }
+//    return sum
+//}
+//
+//print(addition(4,5,6,7,9))
+
+
+// --------------------------------------------------- Значение параметров функции по умолчанию  -------------------------------
+
+
+//func sayHello (parameter: String = "world") -> String {
+//    return "Hello, \(parameter)!"
+//}
+//
+//print(sayHello())
+//print(sayHello(parameter: "Maksim"))
+
+
+
+// --------------------------------------------------- Сквозные параметры функции  -------------------------------
+
+//var heroName: String = "Maksim"
+//
+//func nameUpgrade (name:inout String) -> () {
+//    return name += " - дурачёк"
+//}
+//
+//nameUpgrade(name: &heroName)
+//print(heroName)
+
+
+// 1
+
+
+
