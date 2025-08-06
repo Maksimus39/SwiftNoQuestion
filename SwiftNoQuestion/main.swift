@@ -652,3 +652,66 @@
 //    test = readLine()!
 //}while test != "Все системы работают в норме"
 //print("Тест пройден успешно!")
+
+
+
+// --------------------- Contue -------------------
+
+
+//var i = 0
+//while i < 10 {
+//    i += 1
+//    if i % 2 == 0 {continue}
+//    print(i)
+//}
+
+
+// --------------------- Break -------------------
+
+//var i = 0
+//var a = 0
+//
+//while i <= 5 {
+//    i += 1
+//    if a > 5 {break}
+//    a += i
+//    print(a)
+//}
+
+
+// 1
+
+//let arr:[String] = ["Дождь","Землетрясение","Извержение вулкана"]
+//
+//var situation = arr[0]
+//
+//switch situation {
+//case "Дождь":print("Закрыть окна")
+//    fallthrough
+//case "Землетрясение":print("Выйти на улицу")
+//    fallthrough
+//case "Извержение вулкана":print("Уехать подальше")
+//default:print("Нет причин для беспокойства")
+//}
+
+
+// 2
+
+//var welkom:String = "Привет"
+//
+//repeat {
+//    print("Скажи привет")
+//    welkom = readLine()!
+//}while welkom != "Привет"
+//print("Ну вот и поздоровались")
+
+
+// 3
+
+//var test = 19
+//var range = 40
+//while test < range {
+//    test += 1
+//    if test % 2 != 0 {continue}
+//    print(test)
+//}
