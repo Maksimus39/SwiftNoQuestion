@@ -825,3 +825,50 @@
 //print(commonSet)
 
 
+// ------------------------------------------------------- Кортежи (Turple) ---------------------------------------------------------------------
+
+//var turple:(String,Int) = ("Maksim" , 42)
+//
+//print(type(of: turple))
+//
+//turple.1 = 43
+//print(turple)
+
+//var turple:(name:String,age:Int) = (name: "Максим", age: 42)
+//print(turple.name = "Larisa")
+//print(turple.age = 39)
+//print(turple)
+
+
+// 1
+
+//print("Координата шахматной пешки")
+//var coordinate:(String,String)=("Например","E2")
+//print(coordinate)
+//coordinate.1 = "E4"
+//print(coordinate)
+
+
+// 2
+
+//print("Создайте кортеж с информацией о себе")
+//var myInformation:(name:String,firstName:String,age:Int,isProgrammSwift:Bool) = (name:"Maksim",firstName:"Minakov",age:42,isProgrammSwift:false)
+//print("Меня зовут \(myInformation.name) \(myInformation.firstName), мне \(myInformation.age) года, и я \(myInformation.isProgrammSwift) программист Swift")
+
+
+// 3
+
+//print("Создайте кортеж с информацией о себе")
+//print("Как ваше имя?")
+//var name:String = readLine()!
+//print("Как ваша  фамилия?")
+//var firstName:String = readLine()!
+//print("Cколько вам лет?")
+//var age:Int = Int(readLine()!)!
+//print("Вы программист на языке Swift?")
+//var isProgrammSwift:Bool = Bool(readLine()!)!
+//var myInformation:(name:String,firstName:String,age:Int,isProgrammSwift:Bool) = (name:name,firstName:firstName,age:age,isProgrammSwift:isProgrammSwift)
+//print("Меня зовут \(myInformation.name) \(myInformation.firstName), мне \(myInformation.age) года, и я \(myInformation.isProgrammSwift) программист Swift")
+
+
+
