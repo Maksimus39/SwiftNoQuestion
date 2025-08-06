@@ -753,7 +753,7 @@
 //var name: [Character] = []
 //
 //for char in input {
-//    
+//
 //    name.append(char)
 //}
 //print(name.count)
@@ -765,7 +765,7 @@
 //var array : [Int] = []
 //for _ in 1...5 {
 //    print("Введите число: ")
-//    
+//
 //    let input = Int(readLine()!)
 //    if let input {
 //        array.append(input)
@@ -774,6 +774,54 @@
 //print(array.sorted(by: < ))
 
 
-// 4
+
+// -------------------------------------------- Наборы (множества) Set ------------------------------------------------------------------
+
+
+//var array1 = [4,8,15,16,23,15]
+//
+//var set1 = Set(array1)
+//print(set1)
+//
+//set1.insert(20)
+//print(set1)
+//
+////set1.removeAll()
+////print(set1)
+//print(type(of: set1))
+//set1.insert(10)
+//print(set1)
+//
+//print(set1.intersection(array1))
+//print(set1.symmetricDifference(array1))
+//print(set1.union(array1))
+
+
+// 1
+
+//let food = Set(["Вода", "Молоко", "Протеин", "Овсянка", "Банан"])
+//print(food)
+//
+//let inventory = Set(["Кроссовки","Гантели","Коврик для йоги", "Вода"])
+//print(inventory)
+//
+//let commonSet = food.union(inventory)
+//print(commonSet)
+
+
+// 2
+
+//let food = Set(["Вода", "Молоко", "Протеин", "Овсянка", "Банан"])
+//let inventory = Set(["Кроссовки","Гантели","Коврик для йоги", "Вода"])
+//
+//var commonSet = food.union(inventory)
+//
+//for i in commonSet {
+//    print(i)
+//}
+//print("Какой элемент вы хотите удалить из списка?")
+//let deleteElement:String = readLine()!
+//commonSet.remove(deleteElement)
+//print(commonSet)
 
 
