@@ -871,4 +871,19 @@
 //print("Меня зовут \(myInformation.name) \(myInformation.firstName), мне \(myInformation.age) года, и я \(myInformation.isProgrammSwift) программист Swift")
 
 
+// ---------------------------------------------- Словари (Dictionary) -----------------------------------------------------------------
 
+//var dict1:[String:Int] = ["key1":4,"key2":8,"key3":16,"key4":32,"key5":64,"key6":128,"key7":256,"key8":512]
+//dict1["key8"]! = 1000
+
+//print(dict1)
+//
+//print(dict1.count)
+//print(dict1.isEmpty)
+//print(dict1.keys)
+//print(dict1.values)
+//print(dict1.hashValue)
+
+//for i in dict1 {
+//    print(i)
+//}
