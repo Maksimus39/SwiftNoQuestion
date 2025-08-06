@@ -715,3 +715,65 @@
 //    if test % 2 != 0 {continue}
 //    print(test)
 //}
+
+
+// ------------------------------------------------ Array (массив) --------------------------------------------------------------
+
+//var array = [4,8,15,16,23,15]
+//
+//print(array[0])
+//print(array[0] = 11)
+//print(array)
+//print(array.isEmpty)
+//print(array.insert(12,  at: 0))
+//print(array)
+//print(array.insert(16, at: array.endIndex))
+//print(array)
+//print(array.contains(8))
+//print(array)
+//print(array.randomElement()!)
+
+
+// 1
+
+//print("Введите имя:")
+//let input = readLine()!
+//var name: [Character] = []
+//
+//for char in input {
+//    name.append(char)
+//}
+//print(name)
+
+
+// 2
+
+//print("Введите имя:")
+//let input = readLine()!
+//var name: [Character] = []
+//
+//for char in input {
+//    
+//    name.append(char)
+//}
+//print(name.count)
+//print(name)
+
+
+// 3
+
+//var array : [Int] = []
+//for _ in 1...5 {
+//    print("Введите число: ")
+//    
+//    let input = Int(readLine()!)
+//    if let input {
+//        array.append(input)
+//    }
+//}
+//print(array.sorted(by: < ))
+
+
+// 4
+
+
