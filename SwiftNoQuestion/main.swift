@@ -1008,5 +1008,48 @@
 
 // 1
 
+//func populationDensity (population:Double,square:Double) ->Double {
+//    population / square
+//}
+//
+//let russianFederation = populationDensity(population: 146447424, square: 17125191)
+//print("russianFederation:" , russianFederation)
+//
+//let france = populationDensity(population: 68084217, square: 643801)
+//print("france:" , france)
 
 
+// 2
+
+//func nickCreator (_ name:String, _ surname:String)->Substring{
+//    name.prefix(2) + surname.prefix(2)
+//}
+//
+//let nick = nickCreator( "Maksim",  "Minakov")
+//print(nick)
+
+
+// 3
+
+
+//func arithmeticMean(inc1: [Double], inc2: [Double]) -> Double {
+//    let combinedArray = inc1 + inc2  // Объединяем массивы
+//    let sum = combinedArray.reduce(0, +)  // Сумма всех элементов
+//    return sum / Double(combinedArray.count)  // Среднее арифметическое
+//}
+//
+//let result = arithmeticMean(inc1: [1, 3, 5, 15], inc2: [2.5, 3.14, -100])
+//print(result)  // -12.453333333333333
+
+
+// 4
+
+//func check(totalAmount: Double, countMan: Int, discount: Double = 10) -> Double {
+//    let discountAmount = totalAmount * discount / 100
+//    let finalAmount = totalAmount - discountAmount
+//    return finalAmount / Double(countMan)
+//}
+//
+//// Пример:
+//let result = check(totalAmount: 1000, countMan: 5, discount: 10)
+//print(result)  // 180.0
