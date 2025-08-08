@@ -1053,3 +1053,106 @@
 //// Пример:
 //let result = check(totalAmount: 1000, countMan: 5, discount: 10)
 //print(result)  // 180.0
+
+
+// ----------------------------------------------- Замыкания ----------------------------------------------------------------
+
+
+//var speedCalk = {(distance:Double, time:Double) in distance / time}
+//
+//var speed = speedCalk(5,2)
+//print(speed)
+
+
+// 1
+
+//var myName = {(name:String) in "Привет, \(name)"}
+//
+//var name = myName("Максим")
+//print(name)
+
+
+// 2
+
+//var numbers = {(count:Int) in print ("""
+//    Вы ввели число \(count)
+//    На один больше \(count + 1)
+//    На один меньше \(count - 1)
+//    """)}
+//
+//numbers(42)
+//print(numbers)
+
+
+// 3
+
+//var arrSet = {(arrNum:[Int]) in
+//    let a = Set(arrNum)
+//    let b = Array(a)
+//    return b
+//}
+//
+//let res = arrSet([2,3,4,5,4,5,6,7,8])
+//print(res)
+
+
+// 4
+
+//var populationCount = {(population:Double, square:Double) in  population / square}
+//
+//var cfo = populationCount(40240256, 650205)
+//print("cfo:", cfo)
+//
+//var szfo = populationCount(13867347, 1686972)
+//print("szfo:", szfo)
+
+
+// 5
+
+//var nickCreator = {(name:String, surname:String) in name.prefix(2) + surname.prefix(2)}
+//
+//var nick = nickCreator("Maksim", "Minakov")
+//print(nick)
+
+
+// ------------------------------------------------ Ещё о замыканиях ------------------------------------------------------------
+
+//var addition: (Double, Double) -> Double = {$0 + $1}
+//
+//var sum = addition(10, 20)
+//print(sum)
+
+
+// 1
+
+//var a = 5
+//let plus = { (i1: inout Int) in i1 += 1 }
+//plus(&a)
+//print(a)
+
+
+// 2
+
+//var arithmeticMean = { (inc1: [Double], inc2: [Double]) -> Double in
+//    let combinedArray = inc1 + inc2  // Объединяем массивы
+//    let sum = combinedArray.reduce(0, +)  // Сумма всех элементов
+//    return sum / Double(combinedArray.count)  // Среднее арифметическое
+//}
+//
+//let result = arithmeticMean( [1, 3, 5, 15],  [2.5, 3.14, -100])
+//print(result)
+
+
+// 3
+
+//var sumNum:(Double,Double,Double,Double) -> Double = {($0 + $1) / ($2 + $3)}
+//
+//let item = sumNum(7,3,0.5,2)
+//print(item)
+
+
+// 4
+
+//var sumSting:(String,String,String) -> String = {($0 + $1 + $2)}
+//let str = sumSting("П","Р","О")
+//print(str)
