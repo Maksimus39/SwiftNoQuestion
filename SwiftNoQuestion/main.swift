@@ -1156,3 +1156,70 @@
 //var sumSting:(String,String,String) -> String = {($0 + $1 + $2)}
 //let str = sumSting("П","Р","О")
 //print(str)
+
+
+
+
+// ------------------------------------------ Замыкающие замыкания -------------------------------------------------------
+
+
+//var closure1 = {(i:Int) -> Bool in return i >= 0}
+//
+//let sum = closure1(-100)
+//print(sum)
+
+
+// Сокращённый синтаксис
+
+//var closure1:(Int) -> Bool = {$0 >= 0}
+//
+//var r = closure1(100)
+//print(r)
+
+
+
+//func sumInt(numbers:Int..., closure:(Int) -> Bool) -> Int {
+//    var sum = 0
+//    for i in numbers {
+//       if closure(i) == true {
+//            sum += i
+//        }
+//    }
+//    return sum
+//}
+//
+//var s = sumInt(numbers: -5, 4, 4, 8 , -10, closure: {$0 >= 0})
+//print(s)
+
+
+// 1
+
+//func sumInt(numbers:Int..., closure:(Int) -> Bool) -> Int {
+//    var sum = 0
+//    for i in numbers {
+//       if closure(i)  {
+//            sum += i
+//        }
+//    }
+//    return sum
+//}
+//
+//var s = sumInt(numbers: 5, -5, 12, -1, 46, 0, closure: {$0 < 0})
+//print(s)
+
+
+// 2
+
+//func sumInt(numbers:Int..., closure:(Int) -> Bool) -> Int {
+//    var sum = 0
+//    for i in numbers {
+//        if closure(i)  {
+//            sum += i
+//        }
+//    }
+//    return sum
+//}
+//
+//var s = sumInt(numbers: 1,2,3,4,5,6,7,8,9, closure: {$0%2 == 0})
+//print(s)
+
