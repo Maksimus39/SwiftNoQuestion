@@ -1223,3 +1223,89 @@
 //var s = sumInt(numbers: 1,2,3,4,5,6,7,8,9, closure: {$0%2 == 0})
 //print(s)
 
+
+
+
+// Часть 2
+// ------------------------------------ Обьектно - ориентированное программирование ------------------------------------------------------
+
+
+//struct Car {
+//    var name: String
+//    var color: String
+//    func move(){ print("moving")}
+//
+//
+//    init(name: String, color: String) {
+//        self.name = name
+//        self.color = color
+//    }
+//}
+//
+//var myCar = Car(name: "bmw", color: "green")
+//print("myCar:", myCar)
+//
+//myCar.color = "blue"
+//
+//var res = myCar.color
+//print("res:", res)
+
+
+// 1
+
+//struct Man {
+//    var name:String
+//    var height:Int
+//    var weight:Double
+//}
+
+
+// 2
+
+//var Maksim = Man(name: "Maksim", height: 173, weight: 91)
+//print("Maksim:", Maksim)
+
+
+// 3
+
+//struct Man {
+//    var name:String
+//    var height:Int
+//    var weight:Double
+//
+//    init(name: String) {
+//        self.name = name
+//        self.height = 0
+//        self.weight = 0
+//    }
+//}
+//
+//var name = Man(name: "Maksim")
+//print(name)
+
+
+// 4
+
+struct Man {
+    var name:String
+    var height:Int
+    var weight:Double
+    
+    init(name: String) {
+        self.name = name
+        self.height = 0
+        self.weight = 0
+    }
+    
+    init(name:String,height:Int,weight:Double){
+        self.name = name
+        self.height = height
+        self.weight = weight
+    }
+}
+
+var nameMan = Man(name: "Maksim")
+print("nameMan:", nameMan)
+
+var nameGirl = Man(name: "Larisa", height: 167, weight: 50)
+print("nameGirl:", nameGirl)
