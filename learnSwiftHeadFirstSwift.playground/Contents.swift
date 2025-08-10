@@ -1,15 +1,15 @@
 //
 //class Pizza {
 //    var name = "Pepperoni"
-//    
+//
 //    func showName(){
 //        print("The pizza is a \(name)")
 //    }
-//    
+//
 //    func makeHawaiian(){
 //        name = "Hawaiian"
 //    }
-//    
+//
 //    func makeVegetarian(){
 //        name = "Vegetarian"
 //    }
@@ -100,3 +100,57 @@
 //
 //let nameTwo = "Larisa"
 //print(nameTwo)
+
+
+
+
+// -------------------------------------------- Массивы -----------------------------------------------
+
+
+//let catName = ["Lucy", "Tom", "Billy","Bruce","Lady","Doug","Susan"]
+//
+//var numbers :[Int] = [7,14,6,1,8]
+//
+//numbers[4]
+//
+//
+//numbers.append(42)
+//
+//numbers.remove(at: 3)
+//
+//numbers.insert(43, at: 3)
+//
+//
+//numbers[5] = 420
+//
+//numbers
+
+
+//var pizza = ["Hawaiian",
+//             "Cheese",
+//             "Margherita",
+//             "Meatlovers",
+//             "Vegetarian",
+//             "Prosciutto",
+//             "Vegan"]
+//
+//pizza[4]
+//pizza.append("Pepperoni")
+//pizza.insert("Ham, Pineappe, and Pesto", at: 2)
+//pizza.remove(at:1)
+//pizza
+//pizza.swapAt(5, 6)
+
+
+//var ingridients = ["Oregano",
+//                   "Tomato",
+//                   "Olives",
+//                   "Chese"
+//]
+//
+//print("There are \(ingridients.count) ingridients is this pizza")
+//print(ingridients.isEmpty)
+//print(ingridients.max()!)
+//print(ingridients.min()!)
+
+
