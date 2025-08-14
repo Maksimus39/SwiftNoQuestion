@@ -333,7 +333,7 @@
 //    print("BBQ Chicken is my favorite. Great choise!")
 //case "Margherita" :
 //    print("Margherita is my favorite. Great choise!")
-//    
+//
 //default :
 //    print("All pizzas are pretty cool")
 //}
@@ -352,10 +352,146 @@
 //case 8: print("8No lucky")
 //case 9: print("9 No lucky")
 //case 0: print("0 No lucky")
-//    
+//
 //default: print("default")
 //}
 
 
+// -------------- Операторы диаппазонов --------------------
+
+
+//var ranges1 = 72...96
+//var ranges2 = -100...100
+//var ranges3 = 9...
+//var ranges4 = ...37000
+
+
+//let studentScore:Int = 100
+//var result = "TBD"
+//
+//switch studentScore {
+//case 0...49:
+//    result = "Fail"
+//case 50...59:
+//    result = "Pass"
+//case 60...69:
+//    result = "Credit"
+//case 70...79:
+//    result = "Distinction"
+//case 80...99:
+//    result = "High Distinction"
+//case 100:
+//    result = "Perfect"
+//default: result = "Unknown"
+//}
+
+
+//var num = 7
+//
+//switch num {
+//case _ where num % 2 == 0:
+//    print("This number is an Even number")
+//default:print("This number is an Odd number")
+//}
+
+
+//var num = [1,2,3,4,5,6,7,8,9,10]
+//
+//for i in num {
+//    print(i % 2 == 0)
+//}
+
+
+//var bool:Bool = true
+
+//while bool {
+//    print(true)
+//}
+
+
+//var ranges = 1...
+//for i in ranges {
+//    print(i)
+//}
+
+
+//var ranges = 1...20
+//
+//for i in ranges {
+//    if i % 2 != 0 {
+//        print(i)
+//    }
+//}
+
+
+//let drinks = ["Coffee", "Tea", "Coca-Cola", "Whisky"]
+//
+//for i in drinks {
+//    print(i)
+//}
+
+//drinks.forEach { print("\($0) is still available") }
+
+//var number = 1
+//
+//while number < 100 {
+//    number = number * 2
+//}
+
+//var number = 1
+//
+//repeat {
+//    number = number * 2
+//} while number < 100
+
+//var currentLevel = 1
+//var winningLevel = 10
+//
+//
+//repeat {
+//    print("We are at lewel \(currentLevel) of \(winningLevel)!")
+//    currentLevel = currentLevel + 1
+//}while currentLevel < winningLevel
+//print("Game finished")
+
+
+//var pizzaHawaian = "Hawaian"
+//var pizzaChese = "Chese"
+//var pizzaMargherita = "Margherita"
+//var pizzaMeatlovers = "Meatlovers"
+//var pizzaVegeterian = "Vegetarian"
+//var pizzaProsciutto = "Prosciutto"
+//var pizzaVegan = "Vegan"
+//
+//var pizzaArray:[String] = []
+//pizzaArray.append(pizzaHawaian)
+//pizzaArray.append(pizzaChese)
+//pizzaArray.append(pizzaMargherita)
+//pizzaArray.append(pizzaMeatlovers)
+//pizzaArray.append(pizzaVegeterian)
+//pizzaArray.append(pizzaProsciutto)
+//pizzaArray.append(pizzaVegan)
+//
+//print(pizzaArray)
+//pizzaArray =  pizzaArray.sorted()
+//print(pizzaArray)
+
+// a
+
+//var dogsAge = 10
+//let dogsNamme = "Trevor"
+//
+//dogsAge = dogsAge + 1
+//
+//print("My dog`s name is \(dogsNamme) and they are \(dogsAge) years old")
+
+
+// b
+
+//var number = 10
+//
+//for i in 1...number {
+//    print(Double(number) * 92.7)
+//}
 
 
