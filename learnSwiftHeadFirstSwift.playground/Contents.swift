@@ -184,5 +184,41 @@
 //print(type(of: customerOrder))
 
 
+// ------------------------------------- Хранение значений в словаре --------------------------------
 
 
+//var scores:[String:Int] = ["Paris":5,"Marina":10,"Tim":9,"Jon":14]
+//print(scores)
+//print(type(of: scores))
+
+
+//var Dict:[String:Int] = [:]
+//print(Dict)
+//print(type(of: Dict))
+//
+//Dict["Maksim"] = 41
+//Dict["Larisa"] = 39
+//Dict["Daria"] = 39
+//Dict["Bogdan"] = 8
+//
+//print(Dict)
+//print(type(of: Dict))
+//print(Dict["Maksim"]!)
+
+
+// Упражнение
+
+//var forbiddenPizzas:Set = ["Lemon and Pumpkin", "Hawaiian with a Fried Egg", "Scnitzel and Granola"]
+//
+//forbiddenPizzas.insert("Chicken and Boston Beans")
+//forbiddenPizzas.remove("Lemon and Pumpkin")
+//
+//print(forbiddenPizzas)
+
+
+//var dessertPizzaOrder = ["Rocky Road":2,"Nutella":3,"Caramel Swirl":1]
+//print(dessertPizzaOrder["Rocky Road"]!)
+//print(dessertPizzaOrder["Caramel Swirl"]!)
+//dessertPizzaOrder["Banana Split"] = 17
+//print(dessertPizzaOrder)
+//print(type(of: dessertPizzaOrder))
