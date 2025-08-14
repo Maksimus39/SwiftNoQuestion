@@ -238,3 +238,124 @@
 //print(point)
 //
 //print(point.y)
+
+
+// ---------------------------------------- Управляющие команды ----------------
+
+
+// if
+
+//var userLoverPizza:Bool = true
+//
+//if userLoverPizza  {
+//    print("Enjoy")
+//}else{
+//    print("Sorry")
+//}
+
+
+//var hawaiianPizzaOrdered = true
+//var veganPizzaOrdered = true
+//var pepperoniPizzaOrdered = true
+//
+//if (hawaiianPizzaOrdered) {
+//    print("Да, эту пиццу нужно доставить покупателю")
+//    hawaiianPizzaOrdered = false
+//}
+//if (veganPizzaOrdered) {
+//    print("Да, эту пиццу нужно доставить покупателю")
+//    veganPizzaOrdered = false
+//}
+//if (pepperoniPizzaOrdered) {
+//    print("Да, эту пиццу нужно доставить покупателю")
+//    pepperoniPizzaOrdered = false
+//}
+
+
+//var pizzaOrdered:[String:Int] = ["hawaiianPizzaOrdered": 10, "veganPizzaOrdered": 20,"pepperoniPizzaOrdered": 30]
+//
+//if pizzaOrdered["hawaiianPizzaOrdered"]! > 0 {
+//    print("Да, эту пиццу нужно доставить покупателю")
+//}
+//
+//if pizzaOrdered["veganPizzaOrdered"]! > 0 {
+//    print("Да, эту пиццу нужно доставить покупателю")
+//}
+//
+//if pizzaOrdered["pepperoniPizzaOrdered"]! > 0 {
+//    print("Да, эту пиццу нужно доставить покупателю")
+//}
+
+
+// Switch
+
+//var pizzaOrdered = "Hawaiian"
+//
+//if (pizzaOrdered == "Hawaiian") {
+//    print("Hawaiian is my favorite. Great choise!")
+//}
+//if (pizzaOrdered == "Four Cheese") {
+//    print("Four Cheese is my favorite. Great choise!")
+//}
+//if (pizzaOrdered == "BBQ Chicken") {
+//    print("BBQ Chicken is my favorite. Great choise!")
+//}
+//if (pizzaOrdered == "Margherita") {
+//    print("Margherita is my favorite. Great choise!")
+//}
+
+
+//var planet = "Neptune"
+//
+//if planet == "Jupiter" {
+//    print("Jupiter is named after the roman king of the gods")
+//}
+//if planet == "Neptune" {
+//    print("Neptune is named after the roman king of the gods")
+//}
+//if planet == "Mars" {
+//    print("Mars is named after the roman king of the gods")
+//}
+//if planet == "Earth" {
+//    print("Earth is named after the roman king of the gods")
+//} else {
+//    print("All the planet are pretty cool")
+//}
+
+//var pizzaOrdered = "Margherita"
+//
+//switch (pizzaOrdered) {
+//case "Hawaiian" :
+//    print("Hawaiian is my favorite. Great choise!")
+//case "Four Cheese" :
+//    print("Four Cheese is my favorite. Great choise!")
+//case "BBQ Chicken" :
+//    print("BBQ Chicken is my favorite. Great choise!")
+//case "Margherita" :
+//    print("Margherita is my favorite. Great choise!")
+//    
+//default :
+//    print("All pizzas are pretty cool")
+//}
+
+
+//var luckyNumber = 7
+//
+//switch luckyNumber {
+//case 1: print("1 No lucky")
+//case 2: print("2 No lucky")
+//case 3: print("3 No lucky")
+//case 4: print("4 No lucky")
+//case 5: print("5 No lucky")
+//case 6: print("6 No lucky")
+//case 7: print("7 Es lucky")
+//case 8: print("8No lucky")
+//case 9: print("9 No lucky")
+//case 0: print("0 No lucky")
+//    
+//default: print("default")
+//}
+
+
+
+
