@@ -154,3 +154,35 @@
 //print(ingridients.min()!)
 
 
+// ------------------------------------------ Хранение значений в множестве ---------------------------------
+
+
+//var evenNumbers = Set([2,4,6,8])
+//print(evenNumbers)
+//
+//
+//var evennumbers:Set = [1,3,5,7]
+//print(evennumbers)
+//
+//
+//evenNumbers.insert(10)
+//print(evenNumbers)
+
+//var pizzas = Set(["Hawaiian", "Vegan", "MeatLovers", "Hawaiian"])
+//print(pizzas)
+
+
+//let favPizzas = ["Hawaiian", "MeatLovers"]
+//print(favPizzas)
+//print(type(of: favPizzas))
+//print(type(of: Set(favPizzas)))
+//print(favPizzas)
+//print(type(of: favPizzas))
+
+
+//let customerOrder:Set = ["Hawaiian", "Vegan", "Vegetarian", "Supreme"]
+//print(type(of: customerOrder))
+
+
+
+
