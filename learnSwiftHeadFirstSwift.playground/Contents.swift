@@ -222,3 +222,19 @@
 //dessertPizzaOrder["Banana Split"] = 17
 //print(dessertPizzaOrder)
 //print(type(of: dessertPizzaOrder))
+
+
+
+// Кортежи
+
+
+//var point = (x : 10, y : 14)
+//print(point)
+//print(type(of: point))
+//
+//
+//print(point.x)
+//point = (20, 28)
+//print(point)
+//
+//print(point.y)
