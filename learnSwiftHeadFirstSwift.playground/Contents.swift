@@ -495,3 +495,154 @@
 //}
 
 
+
+// ------------------------------------ Повторное использование кода -----------------------------
+
+
+//print(max(8,"Hello", -1))
+//print(min("Potato","Tomato","Cabbage"))
+//print(max(8,9,10,11,104,-104))
+//print(min(7*2,3+4,92-9,76))
+
+
+//func pizzaOrdered(_ pizza:String, _ count:Int){
+//    if (count > 5) {
+//        print("Because more that 5 pizzas of 10% applies to the order")
+//    }
+//    print("\(count)x \(pizza) pizzas were ordered")
+//}
+//
+//pizzaOrdered("Hawaiian", 10)
+
+//var myNumber = 3
+//
+//func multiplyBy42(_ number:Int){
+//    var number =  number * 42
+//    print("The number multiplied by 42 is: \(number)")
+//}
+//
+//multiplyBy42(myNumber)
+
+
+//var name = "Tim"
+//
+//func makeBob(_ name: inout String){
+//    name = "Bob"
+//    print(name)
+//}
+//
+//makeBob(&name)
+
+
+//var myNumber = 3
+//
+//func multiplyBy42(_ number: inout Int){
+//    var number = 10
+//    number =  number * 42
+//    print("The number multiplied by 42 is: \(number)")
+//}
+//
+//multiplyBy42(&myNumber)
+
+
+//func welcome(name:String) -> String {
+//     "Welkome to the Swift Pizza shop, \(name)"
+//}
+//
+//welcome(name: "Hawaiian")
+
+
+//func greet(name:String, favoriteNumber:Int, likesKaraoke:Bool) -> String {
+//        "Hi, \(name)! Your favorite number is \(favoriteNumber), and you like karaoke."
+//}
+//
+//greet(name: "Paris", favoriteNumber: 6, likesKaraoke: true)
+
+
+
+// значения по умолчанию
+
+//func welkome (name:String = "Maksim") -> String {
+//    let welkomeMessage = "Welkome to the Swift Pizza shop, \(name)"
+//    return welkomeMessage
+//}
+//
+//welkome(name:  "Mars")
+
+
+// Вариадические параметры
+
+//func average(_ numbers: Double...) -> Double {
+//    var total = 0.0
+//    for number in numbers {
+//        total += number
+//    }
+//    return total / Double(numbers.count)
+//}
+//
+//print(average(10,21,3.2,16))
+//print(average(2,4,6))
+
+
+
+//  Задание
+
+//func addNumbers (_ first:Int, _ second:Int) -> Int {
+//    return first + second
+//}
+//
+//addNumbers(10,20)
+
+
+//func multiplyNumbers (_ first:Int, _ second:Int) -> Int {
+//    return first * second
+//}
+//
+//multiplyNumbers(10,20)
+
+
+//func sayHello () {
+//    print("Hello, friends")
+//}
+//
+//sayHello()
+
+
+//func welcome(user:String) -> String {
+//    print("Welkome \(user)!")
+//    return "User `\(user)` has been welkomed"
+//}
+//
+//welcome(user: "Maksim")
+
+
+//func checkFor42(_ number:Int) -> Bool {
+//    if (number == 42) {
+//        return true
+//    } else {
+//        return false
+//    }
+//}
+//
+//checkFor42(42)
+
+
+//var  manipulateInteger:(Int, Int) -> Int
+//
+//func addNumbers (_ first:Int, _ second:Int) -> Int {
+//    return first + second
+//}
+//
+//manipulateInteger = addNumbers
+//
+//print("The result is: \(manipulateInteger(10,90))")
+
+
+
+//func multNumbers(_ first:Int, _ second:Int) -> Int {
+//    return first * second
+//}
+//
+//manipulateInteger = multNumbers
+//
+//print("The result is: \(manipulateInteger(2,5))")
