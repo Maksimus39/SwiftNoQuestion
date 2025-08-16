@@ -1286,26 +1286,169 @@
 
 // 4
 
-struct Man {
-    var name:String
-    var height:Int
-    var weight:Double
-    
-    init(name: String) {
-        self.name = name
-        self.height = 0
-        self.weight = 0
-    }
-    
-    init(name:String,height:Int,weight:Double){
-        self.name = name
-        self.height = height
-        self.weight = weight
-    }
-}
+//struct Man {
+//    var name:String
+//    var height:Int
+//    var weight:Double
+//
+//    init(name: String) {
+//        self.name = name
+//        self.height = 0
+//        self.weight = 0
+//    }
+//
+//    init(name:String,height:Int,weight:Double){
+//        self.name = name
+//        self.height = height
+//        self.weight = weight
+//    }
+//}
+//
+//var nameMan = Man(name: "Maksim")
+//print("nameMan:", nameMan)
+//
+//var nameGirl = Man(name: "Larisa", height: 167, weight: 50)
+//print("nameGirl:", nameGirl)
 
-var nameMan = Man(name: "Maksim")
-print("nameMan:", nameMan)
 
-var nameGirl = Man(name: "Larisa", height: 167, weight: 50)
-print("nameGirl:", nameGirl)
+
+// -------------------- Значения по умолчанию ---------------------------
+
+
+//struct Man {
+//    var name = "Friend"
+//    var height = 0
+//    var weight = 0
+//}
+//
+//var me = Man(height: 10)
+//print(me)
+
+
+
+
+// -------------------- Доступ к свойствам ---------------------------
+
+
+//struct Man {
+//    var name = "Friend"
+//    var height = 0
+//    var weight = 0
+//}
+//
+//var me = Man()
+//print(me.name)
+
+// Новое присвоение
+
+//me.name = "Maksim"
+//print(me.name)
+
+
+
+
+
+// Значимый тип данных
+
+//struct Man {
+//    var name = "Friend"
+//    var height = 0
+//    var weight = 0
+//}
+//
+//
+//var me = Man()
+//var you = me
+//you.name = "Programmist"
+//print(me.name)
+//print(you.name)
+
+
+
+// Свойства типа
+
+
+//struct Car {
+//    var name: String
+//    static var count = 0
+//
+//
+//    init(name: String) {
+//        self.name = name
+//        Car.count += 1
+//    }
+//}
+//
+//var vehicle1 = Car(name: "Toyota")
+//var vehicle2 = Car(name: "BMW")
+//
+//print(Car.count)
+
+
+// Приватные свойства
+
+//struct Car {
+//    var name : String
+//    private var difference = 0
+//
+//
+//    init(name: String, difference: Int) {
+//        self.name = name
+//        self.difference = difference
+//    }
+//}
+//
+//var vehicle1 = Car(name: "BMW", difference: 7)
+//print(vehicle1)
+
+
+
+// 1
+
+//struct List {
+//    var linesCount = 0
+//    var linesColor = "black"
+//    var textColor = "white"
+//}
+//
+//var list1 = List(linesCount: 3)
+//print(list1)
+
+
+// 2
+
+
+//struct List {
+//    var linesCount = 0
+//    var linesColor = "black"
+//    var textColor = "white"
+//}
+//
+//var list1 = List(linesCount: 3)
+//print(list1.linesCount)
+//print(list1.linesColor)
+//list1.linesCount = 5
+//print(list1.linesCount)
+
+
+
+// 3
+
+//struct List {
+//    var linesCount = 0
+//    static  var linesColor = "black"
+//    var textColor = "white"
+//}
+//
+//var list1 = List()
+//var list2 = list1
+//
+//list1.linesCount = 3
+//list2.linesCount = 5
+//
+//List.linesColor = "gray"
+//
+//print(list1)
+//print(list2)
+//
+//print(List.linesColor)
