@@ -1452,3 +1452,38 @@
 //print(list2)
 //
 //print(List.linesColor)
+
+
+
+
+// Методы
+
+//struct Car {
+//    var name: String
+//    var color :String
+//
+//    func move (){
+//        print("У этой машины марка \(name), и она цвета \(color)!")
+//    }
+//}
+//
+//var vehicle1 = Car(name: "Mersedes", color: "black")
+//print(vehicle1.move())
+
+
+// Метод изменяющий свойства
+
+
+//struct Car {
+//    var name: String = "Mersedes"
+//    var color :String
+//    
+//    mutating  func move (){
+//        self.name = "Mazda"
+//        print("У этой машины марка \(name), и она цвета \(color)!")
+//    }
+//}
+//
+//var vehicle1 = Car(color: "black")
+//vehicle1.move()
+
