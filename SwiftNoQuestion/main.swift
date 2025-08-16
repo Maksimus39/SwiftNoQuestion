@@ -1746,19 +1746,19 @@
 //    private  var addCreatedList : Int = 0
 //    var linesColor: String = "black"
 //    var textColor: String = "white"
-//    
+//
 //    func linesCountFunc() {
 //        print("The \(self.linesCount)")
 //    }
-//    
+//
 //    mutating func addLine(_ NumberOfLines: Int = 1) {
 //        self.linesCount += NumberOfLines
 //    }
-//    
+//
 //     func addCreatedListFunc () {
 //        print(List.addCreatedList)
 //    }
-//    
+//
 //    init() {
 //        List.addCreatedList += 1
 //    }
@@ -1779,23 +1779,23 @@
 //                """)
 //        }
 //    }
-//    
+//
 //    private static var addCreatedList: Int = 0
 //    var linesColor: String = "black"
 //    var textColor: String = "white"
-//    
+//
 //    func linesCountFunc() {
 //        print("The \(self.linesCount)")
 //    }
-//    
+//
 //    mutating func addLine(_ NumberOfLines: Int = 1) {
 //        self.linesCount += NumberOfLines
 //    }
-//    
+//
 //    func printCreatedListCount() {
 //        print("Всего создано списков: \(List.addCreatedList)")
 //    }
-//    
+//
 //    init(linesCount: Int = 0) {
 //        self.linesCount = linesCount
 //        List.addCreatedList += 1
@@ -1810,6 +1810,46 @@
 //list2.printCreatedListCount() // Всего создано списков: 2
 
 
+
+
+
+// ----------------- Class --------------
+
+// primer
+
+//class Car {
+//    var name : String
+//    var color : String
+//    func move () {
+//        print("My car brand \(name), and color \(color)")
+//    }
+//    
+//    init ( brand: String, color: String ) {
+//        self.name = brand
+//        self.color = color
+//    }
+//}
+//
+//var myCar = Car(brand: "Toyota", color: "Red")
+//myCar.move()
+
+
+// -------------- Опциональные свойства -------
+
+
+//class Car {
+//    var name : String?
+//    
+//    init(name: String? = nil) {
+//        self.name = name
+//    }
+//}
+//
+//var car1 = Car()
+//var car2 = Car(name: "Ferrary")
+//
+//print(car1.name ?? "Нет имени")
+//print(car2.name!)
 
 
 
