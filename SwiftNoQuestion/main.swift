@@ -1487,3 +1487,103 @@
 //var vehicle1 = Car(color: "black")
 //vehicle1.move()
 
+
+
+
+// -------------- Наблюдатели свойств ---------------------
+
+//struct Car {
+//    var name : String
+//    static var count = 0 {didSet{
+//        print("There were \(count) vehicles made")
+//    }}
+//    
+//    init(name: String) {
+//        self.name = name
+//        Car.count += 1
+//    }
+//}
+//
+//var vehicles1 = Car(name: "BMW")
+//var vehicles2 = Car(name: "Mazda")
+//var vehicles3 = Car(name: "Toyota")
+
+
+// 2
+
+//struct Car {
+//    var name : String
+//    static var count = 0 {didSet (i){
+//        print("""
+//            Было \(i)
+//            Стало \(count) автомобилей
+//            """)
+//    }}
+//    
+//    init(name: String) {
+//        self.name = name
+//        Car.count += 1
+//    }
+//}
+//
+//var vehicles1 = Car(name: "BMW")
+//var vehicles2 = Car(name: "Mazda")
+//var vehicles3 = Car(name: "Toyota")
+
+
+
+// Вычисляемые свойства get и set методы
+
+//struct Car {
+//    var name : String
+//    var rusCount : Int {
+//        if name == "Москвич - 3" {
+//            return 1
+//        } else {return 0}
+//    }
+//    
+//    var chiCount : Int {
+//        if name == "JAC iEVs4" {
+//            return 1
+//        } else {return 0}
+//    }
+//}
+//
+//var vehicles1 = Car(name: "JAC iEVs4")
+//var vehicles2 = Car(name: "Москвич - 3")
+//
+//print(vehicles1.rusCount, vehicles1.chiCount, vehicles2.rusCount, vehicles2.chiCount)
+
+
+
+//struct Car {
+//    var name : String
+//    var other : Int = 0
+//    var rusCount : Int {
+//        get {
+//            if name == "Москвич - 3" {
+//                return 1
+//            } else {return 0}
+//        }
+//        
+//        set {
+//            if self.name != "Москвич - 3" {
+//                other += 1
+//            }
+//        }
+//    }
+//}
+//
+//var vehicles1 = Car(name: "Москвич - 3")
+//print(vehicles1.rusCount, vehicles1.other)
+//
+//vehicles1.rusCount = 10
+//print(vehicles1.rusCount, vehicles1.other)
+//
+//
+//vehicles1.name = "JAC iEVs4"
+//print(vehicles1.rusCount, vehicles1.other)
+//
+//
+//vehicles1.rusCount = 99
+//print(vehicles1.rusCount, vehicles1.other)
