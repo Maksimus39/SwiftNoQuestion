@@ -45,6 +45,52 @@
 
 
 
-// ------------------------ Опционалы и условные операторы ------------------------------------
+// learn Class
+
+//class Pizza {
+//    var name = "Pepperoni"
+//
+//    func showName(){
+//        print("The pizza is a \(name)")
+//    }
+//
+//    func makeHawaiian(){
+//        name = "Hawaiian"
+//        print(name)
+//    }
+//
+//    func makeVegeterian(){
+//        name = "Vegeterian"
+//        print(name)
+//    }
+//}
+//
+//let myPizza = Pizza()
+//myPizza.showName()
+//myPizza.makeHawaiian()
+//myPizza.makeVegeterian()
+
+
+
+// Построение списка ингридиентов
+
+//var ingridients = ["Peprerony", "Mozarell",
+//                   "Bacon", "Sausage",
+//                   "Basil", "Garlic","Onion","Oregano",
+//                   "Red Pepper","Ham","Chicken","Red Onion",
+//                   "Black Oliver","Bell Pepper","Pineapple",
+//                   "Canadian Bacon","Salami","Jalapeno",
+//                   "Spinach","Italian Sausage","Provolone","Pesto",
+//                   "Sun-Dried Tomato","Feta","Meatballs","Prosciutto",
+//                   "Cherry Tomato","Pulled Pork","Chorizo","Anchovy","Capers"
+//]
+
+//print(ingridients.count)
+//print(ingridients[2])
+//print(ingridients.randomElement()!)
+//ingridients.append("Banana")
+//print(ingridients)
+//
+//print("\(ingridients.randomElement()!), \(ingridients.randomElement()!), \(ingridients.randomElement()!), \(ingridients.randomElement()!)")
 
 
