@@ -33,3 +33,28 @@
 //
 //let resLine = line1 + ", " + line2 + "! " + line3 + ", " + line4 + "!"
 //print(resLine)
+
+
+// Преобразование типов
+
+
+//var a = 10
+//var b = 2.5
+//var c : Int
+//c = a + Int(b)
+//print(c)
+
+
+//var des = 10
+//var dvad = 20
+//var res = Double(des) + Double(des)
+//print(res)
+
+
+//print("Введите ваш возраст?")
+//var age = readLine()
+//var result = Int(age!)!
+//print("Ваш возраст \(result) лет!")
+
+
+
