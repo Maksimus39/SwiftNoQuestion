@@ -68,3 +68,29 @@
 //print("В нашей семье четыре человека и вот их имена, это папа \(myFamily.dad) это мама \(myFamily.mother) и это наши сыны \(myFamily.firstSon) и \(myFamily.secondSon), мы очень рады что вы познакомились с нами")
 
 
+
+// Вычисляемые свойства
+
+
+
+//class Circle {
+//    var radius = 0.0
+//    var pi = 3.14
+//    
+//    var circumference:Double {
+//        get {
+//            return pi * radius * 2
+//        }
+//        set {
+//            radius = newValue / pi / 2
+//        }
+//    }
+//}
+//
+//let circle = Circle()
+//circle.radius = 1
+//print(circle.circumference)
+//
+//circle.circumference = 14
+//print(circle.radius)
+
