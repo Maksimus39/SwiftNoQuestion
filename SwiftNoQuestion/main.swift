@@ -412,3 +412,42 @@
 //
 //color = inputBlackTheme ? "black" : "white"
 //print(color)
+
+
+// ----------------------------------------------- Опциональные типы данных -----------------------------------------------------------------------
+
+
+// task 1 - принудительное извлечение
+print("Сколько вам лет?:")
+var inputAge = readLine()
+var age = Int(inputAge!)!
+print("Через год вам будет \(age + 1) лет")
+
+// task 2 - косвенное извлечение
+print("Сколько вам лет?:")
+var inputAge2 = readLine()
+var age2 : Int! = Int(inputAge2!)
+print("Через год вам будет \(age2 + 1) лет")
+
+// task 3 - опциональное связывание
+print("Сколько вам лет?:")
+var inputAge3 = readLine()
+
+if let age3 = Int(inputAge3!) {
+    print("Через год вам будет \(age3 + 1) лет")
+}
+
+// task 4 - опциональное связывание с укороченным синтаксисом
+print("Сколько вам лет?:")
+var inputAge4 = Int(readLine()!)
+
+if let inputAge4 {
+    print("Через год вам будет \(inputAge4 + 1) лет")
+}
+
+// task 5 - ещё один способ
+print("Сколько вам лет?:")
+var inputAge5 = Int(readLine()!)
+
+var age5 = inputAge5 ?? 0
+print("Через год вам будет \(age5 + 1) лет")
