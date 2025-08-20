@@ -58,3 +58,32 @@
 
 
 
+
+// ---------------------------------------- Математические операции ------------------------------------------------
+
+// 1
+
+//print("Введите два числа:")
+//var numA = readLine()
+//var numB = readLine()
+//
+//var resultA = Int(numA!)!
+//var resultB = Int(numB!)!
+//
+//var result = resultA + resultB
+//print("Результат \(result)")
+
+
+// 2
+
+//print("Введите два числа дробного типа:")
+//var num1 = readLine()
+//var num2 = readLine()
+//var num3 = readLine()
+//
+//var result1 = Double(num1!)!
+//var result2 = Double(num2!)!
+//var result3 = Double(num3!)!
+//
+//let result = (result1 + result2) / result3
+//print("Результат \(result)")
