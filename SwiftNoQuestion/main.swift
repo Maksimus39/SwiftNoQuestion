@@ -87,3 +87,46 @@
 //
 //let result = (result1 + result2) / result3
 //print("Результат \(result)")
+
+
+
+// -------------------------------------------------- Сложение строк ---------------------------------------------
+
+
+// 1
+
+//let name = "Максим"
+//let surname = "Минаков"
+//
+//let res = name + " " + surname
+//print(res)
+
+
+// 2
+
+//let name = "Максим"
+//let surname = "Минаков"
+//
+//let res = "\(name) \(surname)"
+//print(res)
+
+
+// 3
+
+//print("Пользователь, введите ваше имя и фамилию:")
+//let name = readLine()!
+//let surname = readLine()!
+//
+//let res = "\(name) \(surname)."
+//print(res)
+
+
+// 4
+
+//print("Введите ваше имя:")
+//let name = readLine()!
+//print("Какой ваш вес?")
+//let weight = Double(readLine()!)!
+//let res = ("Здравствуйте \(name), ваш вес составляет \(weight) кг.")
+//print(res)
+
