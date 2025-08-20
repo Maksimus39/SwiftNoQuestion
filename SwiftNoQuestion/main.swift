@@ -191,3 +191,224 @@
 //} else {
 //    print("Спасибо")
 //}
+
+
+// 5
+
+//print("Введите ваш любимый язык программирования?:")
+//let language = String(readLine()!)
+//
+//if language == "Swift" || language == "SWIFT" {
+//    print("Класс, я тоже люблю \(language)!")
+//} else {
+//    print("\(language) конечно не плох, но Swift лучше")
+//}
+
+
+
+// 6
+
+//print("Пользователь, идёт ли дождь")
+//let rain = String(readLine()!)
+//
+//if rain == "да" {
+//    print("Не забудь зонтик")
+//} else {
+//    print("Светит ли солнце?")
+//}
+//var sommer = String(readLine()!)
+//if sommer == "да" {
+//    print("Не забудь солнечные очки")
+//} else {
+//    print("Хорошей прогулки")
+//}
+
+
+// 7
+
+
+//print("""
+//    1 - радио
+//    2 - телевизор
+//    3 - отмена
+//    """)
+//
+//var input = readLine()!
+//
+//if input == "1" {
+//    print("Включите радио")
+//} else if input == "2" {
+//    print("Включите телевизор")
+//} else if input == "3" {
+//    print("До свидания!")
+//} else {
+//    print("Error")
+//}
+
+
+
+// ----------------------------------------------------- Оператор Switch - case ------------------------------------------------------------
+
+
+//print("""
+//    1 - радио
+//    2 - телевизор
+//    3 - отмена
+//    """)
+//
+//var input = readLine()!
+//
+//switch input {
+//case "1" : print("Включите радио")
+//case "2" : print("Включите телевизор")
+//case "3" : print("Отмена")
+//default : print("Error")
+//}
+
+
+
+
+// Расширение Switch case where
+
+
+//print("""
+//    Меню
+//    1 - Первое
+//    2 - Второе
+//    3 - Напиток
+//    """)
+//
+//let menu = readLine()!
+//
+//print("""
+//    Выберите вариант
+//    1 - С мясом
+//    2 - Постное меню
+//    """)
+//
+//let meat = readLine()!
+//
+//switch menu {
+//case "1" where meat == "1" : print("Ваш заказ: Борщ")
+//case "1" where meat == "2" : print("Ваш заказ: Тыквенный суп")
+//
+//case "2" where meat == "1" : print("Ваш заказ: Треска с гречкой")
+//case "2" where meat == "2" : print("Ваш заказ: Запеканка")
+//
+//case "3" : print("Ваш заказ: Напиток с сухофруктами")
+//
+//default : print("Error")
+//}
+
+
+// task 1
+
+//print("Введите порядковый номер дня недели")
+//
+//let number = Int(readLine()!)!
+//
+//switch number {
+//
+//case 1 : print("Понедельник")
+//case 2 : print("Вторник")
+//case 3 : print("Среда")
+//case 4 : print("Четверг")
+//case 5 : print("Пятница")
+//case 6 : print("Суббота")
+//case 7 : print("Воскресенье")
+//
+//default : print("Такого дня недели несуществует")
+//}
+
+
+// task 2
+
+//print("Введите ваш возраст")
+//let age = Int(readLine()!)!
+//
+//print("Есть ли у вас билет на самолёт?")
+//let ticket = readLine()!
+//
+//switch ticket {
+//    
+//case "да" : print("Проходите пожалуйста")
+//case "нет" where age > 2 : print("Вам необходимо сначала купить билет")
+//    
+//case _ where age >= 0 && age <= 2 : print("Проходите")
+//    
+//default : print("Error")
+//}
+
+
+// task 3
+
+//print("""
+//    Меню
+//    1 - Первое
+//    2 - Второе
+//    3 - Напиток
+//    """)
+//
+//let menu = readLine()!
+//
+//var meat = ""
+//if menu == "1" || menu == "2" {
+//    print("""
+//        Выберите вариант
+//        1 - С мясом
+//        2 - Постное меню
+//        """)
+//}
+//
+//meat = readLine()!
+//
+//switch menu {
+//case "1" where meat == "1" : print("Ваш заказ: Борщ")
+//case "1" where meat == "2" : print("Ваш заказ: Тыквенный суп")
+//
+//case "2" where meat == "1" : print("Ваш заказ: Треска с гречкой")
+//case "2" where meat == "2" : print("Ваш заказ: Запеканка")
+//
+//case "3" : print("Ваш заказ: Напиток с сухофруктами")
+//
+//default : print("Error")
+//}
+
+
+
+// ------------------------------------------------------ Тройной оператор условия ---------------------------------------------------------
+
+// Условие ? значение 1 : значение 2
+
+
+//var color : String
+//var darkMode = false
+//color = darkMode == false ? "black" : "white"
+//print(color)
+
+
+//var color : String
+//var darkMode = false
+//
+//color = !darkMode ? "black" : "white"
+//print(color)
+
+
+// task 1
+
+//var color : String
+//print("Пользователь, включить тёмную тему?")
+//var inputBlackTheme = String(readLine()!)
+//
+//color = inputBlackTheme == "да" ? "black" : "white"
+//print(color)
+
+
+// task 2
+
+//var color : String
+//print("Пользователь, включить тёмную тему?")
+//var inputBlackTheme = Bool(readLine()!)!
+//
+//color = inputBlackTheme ? "black" : "white"
+//print(color)
