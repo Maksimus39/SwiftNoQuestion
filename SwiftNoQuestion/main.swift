@@ -330,12 +330,12 @@
 //let ticket = readLine()!
 //
 //switch ticket {
-//    
+//
 //case "да" : print("Проходите пожалуйста")
 //case "нет" where age > 2 : print("Вам необходимо сначала купить билет")
-//    
+//
 //case _ where age >= 0 && age <= 2 : print("Проходите")
-//    
+//
 //default : print("Error")
 //}
 
@@ -518,3 +518,85 @@
 //print("Пользователь введите ваше имя?:")
 //let nameUser = readLine()!
 //print("В вашем имени \(nameUser.count) букв, поздравляю")
+
+
+
+// ------------------------------------------- Цикл for in -------------------------------------------------------------------------------
+
+//var range = 1...5
+//range = 1...10000
+//
+//let Hello = "Привет"
+//
+//for _ in range {
+//    print( Hello )
+//}
+
+//let language = "Swift"
+//for day in 1...10 {print("Я программирую на \(language) уже \(day) дней")}
+
+
+//let count = 1...100
+//
+//for i in count {print("А что если умножить \((i * i) * (i + i)), вот что получится ))")}
+
+
+//for _ in 1...2 {for char in "Привет" {print(char)}}
+
+
+
+// task 1
+
+//let num = 1...7
+//print("Введите ваше имя и выведите его \(num) раз")
+//let name = readLine()!
+//
+//for _ in num {
+//    print(name)
+//}
+
+
+// task 2
+
+//print("Введите ваше имя:")
+//let name = readLine()!
+//for n in name {print(n)}
+
+
+// task 3
+
+//print("Введите ваше имя?:")
+//var name = readLine()!
+//print("Сколько раз вывести ваше имя?:")
+//let count = Int(readLine()!)
+//
+//if let count {
+//    for _ in 1...count {print(name)}
+//}
+
+
+// task 4
+
+//print("Введите целое число от 1 до 9")
+//let n = Int(readLine()!)
+//
+//
+//if let n {
+//    for i in 1...n {print( i * n)}
+//}
+
+
+// 6
+
+//print("Вывести таблицу умножения для чисел от 1 до 9")
+//
+//let start = 1
+//let num = 9
+//
+//for i in start...num {
+//    for n in start...num {
+//        print( i * n)
+//    }
+//}
+
+
