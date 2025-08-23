@@ -600,3 +600,91 @@
 //}
 
 
+
+
+// ------------------------------------------- цикл while -----------------------------------------------------------------------------
+
+//let password = "Qwerty123"
+//var attempt = ""
+//
+//while attempt != password {
+//    print("Input password")
+//    attempt = readLine()!
+//}
+//print("Open")
+
+
+// task 1
+
+//let state : Int = 100
+//var increment : Int = 0
+//
+//while increment < state {
+//    print("Add in increment")
+//    increment = Int(readLine()!)!
+//    increment += increment
+//}
+//print("Completed")
+
+
+// task 2
+
+//var sum = 0
+//var i = 0
+//
+//while sum < 100 {
+//    print("Add in increment")
+//    var n = Int(readLine()!)
+//
+//    if let n {
+//        sum = sum + n
+//        i = i + 1
+//    } else {
+//        print("Ошибка ввода перезапустите программу")
+//    }
+//}
+//print("Результат = \(sum)")
+//print("Количество добавлений = \(i)")
+
+
+// task 3
+
+//print("Введите год рождения")
+//var age = Int(readLine()!)!
+//
+//while age < 1900 || age > 2025 {
+//    print("Неможет такого быть")
+//    print("Введите год рождения")
+//    age = Int(readLine()!)!
+//}
+//print("Спасибо")
+
+
+// task 4
+
+//print("Купи мне слоника")
+//var answer = readLine()!
+//let result = "Я купил слоника, а теперь ты купи мне слоника"
+//
+//while answer != result {
+//    print("Все так говорят \(answer), а ты возьми и купи мне слоника")
+//    answer = readLine()!
+//}
+//print("Чёрт")
+
+
+
+
+
+// ---------------------------- Fallthrought ----------------------------------------------------
+
+//var situation = "Волк"
+//
+//switch situation {
+//case "Медведь" : print("Закрыть входные окна и двери")
+//    fallthrough
+//case "Волк" : print("Взять ружьё")
+//    fallthrough
+//case "Мышь" : print("Сохранять спокойствие")
+//default : print("Нет причин для беспокойства!")
+//}
