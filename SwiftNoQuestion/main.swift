@@ -740,7 +740,7 @@
 //case "Землетрясение" : print("Выйти на улицу")
 //    fallthrough
 //case "Извержение вулкана" : print("Уехать подальше")
-//    
+//
 //default : print("Error")
 //}
 
@@ -767,3 +767,230 @@
 //    if test % 2 != 0 {continue}
 //    print(test)
 //}
+
+
+
+// ------------------------------------------------ Массивы (Array) -------------------------------------------------------------------------
+
+
+//var array = [4, 8, 15, 16, 23, 15]
+//print(array[1])
+//print(array[0])
+//array[0] = 5
+//print(array[0])
+//
+//
+//array = array + [77, 88]
+//print(array)
+//
+//print(array.count)
+//print(array.isEmpty)
+//array.append(100)
+//print(array)
+//
+//array.insert(200, at: 0)
+//array.insert(300, at: 0)
+//array.insert(400, at: 0)
+//array.insert(500, at: 0)
+//print(array)
+//
+//
+//print(array.contains(100))
+//
+//print(array.min()!)
+//print(array.max()!)
+//
+//
+//array.sort(by: > )
+//print(array)
+//
+//array.sort(by: < )
+//print(array)
+//
+//print(array.randomElement()!)
+//
+//for i in array {
+//    print(i)
+//}
+
+
+
+// task 1
+
+//print("Введите ваше имя?")
+//let input = readLine()!
+//
+//var name : [Character] = []
+//
+//for i in input {
+//    name.append(i)
+//}
+//print(name)
+
+
+
+// task 2
+
+//print("Введите ваше имя?")
+//let input = readLine()!
+//
+//var name : [Character] = []
+//
+//for i in input {
+//    name.append(i)
+//}
+//print("В вашем имени \(name.count) букв")
+//for i in name {print(i)}
+
+
+// task 3
+
+//var array : [Int] = []
+//print("Введите пять чисел")
+//
+//for _ in 1...5 {
+//    print("Введите число")
+//
+//    let input = readLine()
+//    if let input {
+//        array.append(Int(input)!)
+//    }
+//}
+//print(array.sorted(by: > ))
+
+
+
+// -------------------------------- Наборы / Множества (Set)
+
+//var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+//
+//var settter = Set(arr)
+//print("set:", settter)
+//
+//
+//var set = Set([1, 2, 3, 2, 4, 6, 8 , 10])
+//print("set:", set)
+
+
+
+// task 1
+
+//var food = Set(["Вода", "Молоко", "Протеин", "Овсянка", "Банан"])
+//var inventory = Set(["Кроссовки", "Гантели", "Коврик для йоги", "Вода"])
+//
+//var result = inventory.symmetricDifference(food)
+//print("Элементы, которые есть в инвентаре:", result)
+//print("Всего элементов в инвентаре:", result.count)
+//print("Общие элементы в инвентаре:", inventory.intersection(food))
+
+
+// task 2
+
+//var food = Set(["Вода", "Молоко", "Протеин", "Овсянка", "Банан"])
+//var inventory = Set(["Кроссовки", "Гантели", "Коврик для йоги", "Вода"])
+//var result = inventory.symmetricDifference(food)
+
+
+
+// ------------------------ Кортежи ( Turple ) -----------------------------
+
+//var a = 10
+//var b = "Bbb"
+//
+//var tuple : (Int, String) = (a, b)
+//print(tuple)
+//
+//
+//var integer : Int = a
+//var str : String = b
+//
+//(integer, str) = tuple
+//print(integer)
+//print (str)
+//
+//
+//print(integer, str)
+
+
+
+// task 1
+
+//print("Создайте кортеж с координатой пешки E2")
+//var coordinate : (String, Int) = ("E", 2)
+//
+//coordinate.0 = "E"
+//coordinate.1 = 4
+//
+//print(coordinate)
+
+
+// task 2
+
+//print("Создайте кортеж с информацией о себе")
+//
+//var info = ( name : "Maksim",
+//             surname : "Minakov",
+//             age : 41,
+//             SkillProgrammistSwift : false
+//)
+//
+//print("Меня зовут \(info.name) \(info.surname), мне \(info.age) год, и я пока \(info.SkillProgrammistSwift) программист Swift ")
+
+
+
+// task 2
+
+//print("Создайте кортеж с информацией о себе")
+//
+//var info : (name : String, surname : String, age : Int, SkillProgrammistSwift : String)
+//print("Введите ваше имя?")
+//var name : String = readLine() ?? ""
+//print("Введите вашу фамилию?")
+//var surname : String = readLine() ?? ""
+//print("Сколько вам лет?")
+//var age : Int = Int(readLine()!)!
+//print("Умеете программировать на Swift?")
+//var bool : String = readLine()!
+//
+//
+//info = (name, surname, age, bool)
+//
+//print("Меня зовут \(info.name) \(info.surname), мне \(info.age) год, и я пока \(info.SkillProgrammistSwift) программист Swift ")
+
+
+// ---------------------------- Словари ( Dictionary )
+
+
+// task 1
+
+//var dict : [String : String] = ["S" : "...", "O" : "____", "K" : "_ . _"]
+//
+//print(dict["O"]!, dict["K"]!)
+
+
+// task 2
+
+//print("Создайте пустой словарь, ключи будут имена а рост и вес будет кортеж")
+//
+//var dict : [String : (Int, Int)] = [:]
+//
+//for _ in (1...3) {
+//    print("Введите ваше имя?")
+//    let name = readLine()!
+//    
+//    print("Введите ваш рост?")
+//    let height = Int(readLine()!)!
+//    
+//    print("Введите ваш вес?")
+//    let weight = Int(readLine()!)!
+//    
+//    dict[name] = (height, weight)
+//}
+//
+//for (name, i) in dict {print("\(name) рост - вес \(i) height/weight")}
+
+
+
+
+
+
