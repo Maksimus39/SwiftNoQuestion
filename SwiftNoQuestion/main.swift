@@ -688,3 +688,82 @@
 //case "Мышь" : print("Сохранять спокойствие")
 //default : print("Нет причин для беспокойства!")
 //}
+
+
+
+// ----------------- Repeat ---------------------
+
+//var test = "Все системы работают в норме"
+//
+//repeat {
+//    print("Проведите тест системы")
+//    test = readLine()!
+//} while test != "Все системы работают в норме"
+//            print("Тест пройден успешно!")
+
+
+
+// ----------------- Continue -------------------
+
+
+//var i = 0
+//
+//while i < 10 {
+//    i += 1
+//    if i % 2 == 0 {continue}
+//    print(i)
+//}
+
+
+
+// ----------------- Break ---------------------
+
+//var i = 0
+//var a = 0
+//
+//while i <= 5 {
+//    i += 1
+//    if a > 5 {break}
+//    a += 1
+//    print(i)
+//}
+
+
+
+// task 1
+
+//var situation = "Error"
+//
+//switch situation {
+//case "Дождь" : print("Закрыть окна")
+//    fallthrough
+//case "Землетрясение" : print("Выйти на улицу")
+//    fallthrough
+//case "Извержение вулкана" : print("Уехать подальше")
+//    
+//default : print("Error")
+//}
+
+
+// task 2
+
+//var test = "Привет"
+//
+//repeat {
+//    print("Поздоровайся с нами")
+//    test = readLine()!
+//} while test != "Привет"
+//            print("Здорова")
+
+
+
+// task 3
+
+//var test = 20
+//var range =  40
+//
+//while test < range {
+//    test += 1
+//    if test % 2 != 0 {continue}
+//    print(test)
+//}
