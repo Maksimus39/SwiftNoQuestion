@@ -977,13 +977,13 @@
 //for _ in (1...3) {
 //    print("Введите ваше имя?")
 //    let name = readLine()!
-//    
+//
 //    print("Введите ваш рост?")
 //    let height = Int(readLine()!)!
-//    
+//
 //    print("Введите ваш вес?")
 //    let weight = Int(readLine()!)!
-//    
+//
 //    dict[name] = (height, weight)
 //}
 //
@@ -993,4 +993,71 @@
 
 
 
+// ---------------------------------------------- Function ( Функции ) -------------------------------------------------------------------
 
+
+//func speedCalc (distance : Float, time : Float) -> Float {
+//    let x = distance / time
+//    return x
+//}
+//
+//var speed = speedCalc(distance: 10.5, time: 47.8)
+//print(speed)
+
+
+
+// task 1
+
+//func hello( name : String ) {
+//    print("Привет, \(name)")
+//}
+//
+//hello(name: "Maksim")
+
+
+// 2
+
+//func sayHello(){
+//    print("Как твоё имя?")
+//    let name = readLine()!
+//    print("Моё имя, \(name)!")
+//}
+//
+//sayHello()
+
+
+// 3
+
+//func sayHello() -> String {
+//    print("Как твоё имя?")
+//    let name = readLine()!
+//    return name
+//}
+//
+//var names = sayHello()
+
+
+
+// 4
+
+//func numbers (num : Int) {
+//    print("""
+//        Вы ввели число -> \(num)
+//        На один больше -> \(num + 1)
+//        На  один еньше -> \(num - 1)
+//        """)
+//}
+//
+//numbers(num: 42)
+
+
+// 5
+
+//func arrSet ( inputArray : [Int] ) -> [Int] {
+//    let a = Set(inputArray)
+//    let b = Array(a)
+//    return b
+//}
+//
+//var newArr = arrSet(inputArray: [2,3,4,5,4,5,6,7,8])
+//print(newArr)
