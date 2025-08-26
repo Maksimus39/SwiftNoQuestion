@@ -1061,3 +1061,129 @@
 //
 //var newArr = arrSet(inputArray: [2,3,4,5,4,5,6,7,8])
 //print(newArr)
+
+
+
+
+
+
+// --------------------------------------------------- Оператор return --------------------------------------
+
+
+// ------- 1 способ
+//func speedCalc ( distance : Double, time : Double) -> Double {
+//    let x = distance / time
+//    return x
+//}
+//
+//var speed = speedCalc(distance: 10.0, time: 50.0)
+//print(speed)
+
+
+
+// -------  2 способ
+//func speedCalc2 ( distance : Double, time : Double) -> Double {    // если учловие в одну строку то оператор ( return ) можно не писать
+//    distance / time
+//}
+//
+//var speed2 = speedCalc2(distance: 10.0, time: 50.0)
+//print(speed2)
+
+
+// -------  3 способ
+//func speedCalc3 ( _ d : Double, _ t : Double ) -> Double {
+//    d / t
+//}
+//
+//var speed3 = speedCalc3 ( 10.0,  50.0)
+//print(speed3)
+
+
+
+
+
+//  -------------- Неопределённое количество параметров функции -------------------------------------
+
+
+//func addition ( _ numbers : Int... ) -> Int {
+//    var sum = 0
+//    for i in numbers {
+//        sum += i
+//    }
+//  return sum
+//}
+//
+//print(addition(4, 5, 6, 7, 8, 9))
+
+
+
+//  -------------- Значение рпараметров функции по умолчанию -------------------------------------
+
+
+//func sayHi ( name : String = "друг") -> Void {
+//    print("Привет \(name)")
+//}
+//
+//sayHi() // Привет друг
+//sayHi( name: "Максим" )
+
+
+
+
+//  -------------- Сквозные параметры функции -------------------------------------
+
+
+//var heroName : String = "Максим"
+//func nameUpgrade ( name : inout String ) -> Void {
+//    return name += " - Developer Swift"
+//}
+//
+//nameUpgrade(name: &heroName)
+//print( heroName )
+//
+//
+//func nameAndAge() ->  ( name : String, age : Int) {
+//   return ( "Maksim", 42)
+//}
+//
+//var name1 = nameAndAge().name
+//var age1 = nameAndAge().age
+//print( name1, age1 )
+
+
+
+// task 1
+
+//func statePopulationDensity ( state : Int, population : Int ) -> Int {
+//    population / state
+//}
+//
+//let russiaFederation = statePopulationDensity(state: 17_125_191, population: 146_447_424)
+//print("russiaFederation -> :", russiaFederation)
+//
+//
+//let franciaFederation = statePopulationDensity(state: 643_801, population: 68_084_217)
+//print("franciaFederation -> :", franciaFederation)
+
+
+
+// task 2
+
+//func generateNickName (name : String, surName : String) -> Substring {
+//    name.prefix(2) + surName.prefix(2)
+//}
+//
+//var nickName = generateNickName(name: "Maksim", surName: "Minakov")
+//print(nickName)
+
+
+// task 3
+
+
+//func countAverageArray (oneArray:[Int], twoArray:[Double]) -> Double {
+//    let combinedArray = oneArray.map(Double.init) + twoArray
+//       return combinedArray.reduce(0, +) / Double(combinedArray.count)
+//}
+//
+//let result = countAverageArray(oneArray: [1, 3, 5, 15], twoArray: [2.5, 3.14, -100])
+//print(result)
