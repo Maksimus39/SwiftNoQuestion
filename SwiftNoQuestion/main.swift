@@ -1187,3 +1187,147 @@
 //
 //let result = countAverageArray(oneArray: [1, 3, 5, 15], twoArray: [2.5, 3.14, -100])
 //print(result)
+
+
+
+
+// ------------------------------- Замыкания -----------------------------------------------------------------------
+
+//var speedCalc = { (distance: Double, time: Double) -> Double in
+//    distance / time
+//}
+//
+//var speed = speedCalc(100, 5)
+//print(speed)
+
+
+
+// task 1
+
+//var helloName = {( name : String) -> String in
+//    ("Hello, \(name), this is developer Swift))))!!!")
+//}
+//
+//var name = helloName("Maksim")
+//print(name)
+
+
+
+// task 2
+
+//let myAge = {(age : Int)  in
+//print("""
+//    Вы ввели возраст \(age) года
+//    Вам было \(age - 1) год
+//    Вам будет \(age + 1) года
+//    """)
+//}
+//
+//myAge(42)
+
+
+
+// task 3
+
+//var arrInt = {(input:Array<Int>) in
+//    let a = Set(input)
+//    let b = Array(a)
+//    return b
+//}
+//
+//
+//print(arrInt([1,2,3,4,5,6,7,8,9,4,5,6,1,2,3,6,7,4,5,9,8,4]))
+
+
+
+// task 4
+
+
+//var populationDensity = {(numberInhabitants : Int, square : Int) -> Int in
+//    numberInhabitants / square
+//}
+//
+//let cfo = populationDensity(40_240_256, 650_205)
+//let szfo = populationDensity(13_867_347, 1_686_972)
+//
+//print("Плотность населения в Центральном Федеральном Округе составляет \(cfo) жителей")
+//print("Плотность населения в Северо Западном Федеральном Округе составляет \(szfo) жителей")
+
+
+// task 5
+
+//let nickname = {(name : String, surname : String) in
+//    name.prefix(2) + surname.prefix(2)
+//}
+//
+//let myNickName = nickname("Максим", "Минаков")
+//print(myNickName)
+
+
+// ------------------ Короткий синтаксис -------------------------
+
+//var addition = { (a: Int, b: Int) -> Int in
+//    a + b
+//}
+//
+//var n = addition(10, 20)
+//print(n)
+
+
+//var addition : (Int, Int) -> Int = {$0 + $1}
+//
+//var addition2: (Int, Int) -> Int = {
+//    return $0 + $1
+//}
+//
+//
+//let n = addition2(40, 40)
+//print(n)
+
+
+// task 1
+
+//var number = 42
+//
+//var inc = {(inc : inout Int) in inc += 1}
+//
+//inc(&number)
+//print(number)
+
+
+// task 2
+
+//var sumArr = {(a : Double...) in
+//    var sumArr : Double = 0.0
+//    
+//    for i in a {
+//        sumArr += i
+//    }
+//    return sumArr / Double(a.count)
+//}
+//
+//
+//print(sumArr(1, 3, 5))
+
+
+
+// task 3
+
+//var result : (Double, Double, Double, Double) -> Double = {
+//    ($0 + $1) / ($2 + $3)
+//}
+//
+//
+//var result2: (Double, Double, Double, Double) -> Double = { ($0 + $1) / ($2 + $3) }
+//
+//
+//print(result(1, 2, 3, 4))
+//print(result2(1, 2, 3, 4))
+
+
+// task 4
+
+//var sumString : (String, String, String) -> String = { $0 + $1 + $2 }
+//   
+//var result = sumString("П", "Р", "О")
+//print(result)
