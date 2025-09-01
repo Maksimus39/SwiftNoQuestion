@@ -1375,7 +1375,7 @@
 //struct Car {
 //    var name : String
 //    var color : String
-//    
+//
 //    func move (){
 //        print("moving")
 //    }
@@ -1391,11 +1391,11 @@
 //struct Person {
 //    var name : String
 //    var age : Int
-//    
+//
 //    func profession () {
 //        print("Swift developer")
 //    }
-//    
+//
 //    init(name : String, age : Int) {
 //        self.name = name
 //        self.age = age
@@ -1444,8 +1444,8 @@
 //    var name : String
 //    var height : Int
 //    var weight : Int
-//    
-//    
+//
+//
 //    init(name: String) {
 //        self.name = name
 //        self.height = 0
@@ -1464,14 +1464,14 @@
 //    var name : String
 //    var height : Int
 //    var weight : Int
-//    
-//    
+//
+//
 //    init(name: String) {
 //        self.name = name
 //        self.height = 0
 //        self.weight = 0
 //    }
-//    
+//
 //    init(name : String, height : Int, weight : Int){
 //        self.name = name
 //        self.height = height
@@ -1482,3 +1482,135 @@
 //
 //var humanThree = ManThree(name: "Bogdan", height: 130, weight: 30)
 //print("humanThree -> : \(humanThree)")
+
+
+
+
+
+// ---------------------------- Значения ро умолчанию ------------------------------
+
+//struct Man {
+//    var name : String = "Maksim"
+//    var age : Int = 42
+//    var weight : Int = 91
+//}
+//
+//let human = Man()
+//print("human \(human)")
+
+
+
+// ---------------------------- Доступ к свойствам ------------------------------
+
+
+//struct Laptop {
+//    let name : String = "MacBook Air"
+//    let screenSize : Double = 13.3
+//    let weight : Double = 1.24
+//    let screenResolution : String = "2560 x 1664"
+//}
+//
+//let laptop = Laptop()
+//print(laptop.name)
+//print(laptop.screenSize)
+//print(laptop.weight)
+//print(laptop.screenResolution)
+
+
+
+// ---------------------------- Значимый тип данных ------------------------------
+
+//struct Car {
+//    var brand = "Toyota"
+//    var color = "Red"
+//}
+//
+//let car = Car()
+//
+//var carMazda = car
+//
+//carMazda.brand = "Mazda"
+//
+//print(car.brand == carMazda.brand)
+
+
+// ---------------------------- Свойства типа ------------------------------
+
+
+//struct LaptopMacBook {
+//    var name = "MacBook Air M1"
+//    static var countLaptop : Int = 0        // static - делает данное свойство общим для экземпляром структуры
+//    
+//    
+//    init(name: String) {
+//        self.name = name
+//        LaptopMacBook.countLaptop += 1
+//    }
+//}
+//
+//var laptopOne = LaptopMacBook(name: "MacBook Air M1")
+//var laptopTwo = LaptopMacBook(name: "MacBook Air M1")
+//
+//print(LaptopMacBook.countLaptop)
+
+
+// ---------------------------- Приватные свойства ------------------------------
+
+
+//struct Book {
+//    var name : String = "Swift не вопрос"
+//    private var own : Bool                  // private - делает данное свойство частным для экземпляром структуры, и нужно инициализатор задавать самому
+//    
+//    
+//    init(name: String, own: Bool = false) {
+//        self.name = name
+//        self.own = own
+//    }
+//}
+//
+//var book = Book(name: "Swift no question")
+//var book2 = Book(name: "Дюна")
+//
+//print("The book is private -> : \(book) and \(book2)")
+
+
+
+// task 1
+
+
+//struct List {
+//    var linesCount : Int = 0
+//    var linesColor : String = "black"
+//    var textColor : String = "white"
+//}
+//
+//
+//var ekz = List(linesCount: 3)
+//print("ekz -> \(ekz)")
+
+
+// task 2
+
+//print(ekz.linesColor)
+//print(ekz.textColor)
+//ekz.linesCount = 5
+//print(ekz.linesCount)
+
+
+// task 3
+
+
+//struct List2 {
+//    var linesCount : Int = 0
+//    static  var linesColor : String = "white"
+//    var textColor : String = "black"
+//}
+//
+//var list3 = List2(linesCount: 3)
+//var list5 = List2(linesCount: 5)
+//
+//print("list3 -> \(list3) and list5 -> \(list5)")
+//
+//List2.linesColor = "gray"
+
+
