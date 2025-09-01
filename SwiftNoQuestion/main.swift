@@ -1363,3 +1363,122 @@
 //
 //var a3 = add(numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9, closure: {$0 % 2 == 0})
 //print(a3)
+
+
+
+
+// ---------------------------------------------------------- PART TWO OOP -------------------------------------------------------------
+
+
+// 1
+
+//struct Car {
+//    var name : String
+//    var color : String
+//    
+//    func move (){
+//        print("moving")
+//    }
+//}
+//
+//var car1 = Car(name: "bmw", color: "black")
+//print("car1 -> : \(car1)")
+//car1.move()
+//print(car1.color)
+
+
+
+//struct Person {
+//    var name : String
+//    var age : Int
+//    
+//    func profession () {
+//        print("Swift developer")
+//    }
+//    
+//    init(name : String, age : Int) {
+//        self.name = name
+//        self.age = age
+//    }
+//}
+//
+//let pers = Person(name : "Maksim", age: 42)
+//print("pers -> : \(pers)")
+//print("pers.name -> : \(pers.name)")
+//print("pers.age -> : \(pers.age)")
+//
+//pers.profession()
+
+
+// Опциональное свойство
+
+//struct Developer {
+//    var profession : String?
+//}
+//
+//var prof = Developer()
+//var prof2 = Developer(profession: "Swift developer")
+//
+//print("prof and prof2 -> : \(prof) & \(prof2)")
+
+
+
+// task 1
+
+//struct Man {
+//    var name : String
+//    var height : Int
+//    var weight : Int
+//}
+
+
+// task 2
+
+//var human = Man(name: "Maksim", height: 173, weight: 91)
+//print(human)
+
+
+// task 3
+
+//struct ManTwo {
+//    var name : String
+//    var height : Int
+//    var weight : Int
+//    
+//    
+//    init(name: String) {
+//        self.name = name
+//        self.height = 0
+//        self.weight = 0
+//    }
+//}
+//
+//var humanTwo = ManTwo(name : "Larisa")
+//print(humanTwo)
+
+
+// task 4
+
+
+//struct ManThree {
+//    var name : String
+//    var height : Int
+//    var weight : Int
+//    
+//    
+//    init(name: String) {
+//        self.name = name
+//        self.height = 0
+//        self.weight = 0
+//    }
+//    
+//    init(name : String, height : Int, weight : Int){
+//        self.name = name
+//        self.height = height
+//        self.weight = weight
+//    }
+//}
+//
+//
+//var humanThree = ManThree(name: "Bogdan", height: 130, weight: 30)
+//print("humanThree -> : \(humanThree)")
