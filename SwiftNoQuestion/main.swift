@@ -1266,14 +1266,14 @@
 
 // ------------------ Короткий синтаксис -------------------------
 
-//var addition = { (a: Int, b: Int) -> Int in
+//var addition0 = { (a: Int, b: Int) -> Int in
 //    a + b
 //}
-//
-//var n = addition(10, 20)
+
+//var n = addition0(10, 20)
 //print(n)
-
-
+//
+//
 //var addition : (Int, Int) -> Int = {$0 + $1}
 //
 //var addition2: (Int, Int) -> Int = {
@@ -1281,8 +1281,8 @@
 //}
 //
 //
-//let n = addition2(40, 40)
-//print(n)
+//let n2 = addition2(40, 40)
+//print(n2)
 
 
 // task 1
@@ -1299,7 +1299,7 @@
 
 //var sumArr = {(a : Double...) in
 //    var sumArr : Double = 0.0
-//    
+//
 //    for i in a {
 //        sumArr += i
 //    }
@@ -1328,6 +1328,38 @@
 // task 4
 
 //var sumString : (String, String, String) -> String = { $0 + $1 + $2 }
-//   
-//var result = sumString("П", "Р", "О")
-//print(result)
+//
+//var result3 = sumString("П", "Р", "О")
+//print(result3)
+
+
+
+
+// ----------------------------- Замыкающие замыкания ----------------------------------
+
+
+//var closure1 = {(i : Int) -> Bool in return i >= 0}
+//
+//var closure2 : (Int) -> Bool = {$0 >= 0}
+//
+//
+//func add (numbers : Int..., closure : (Int) -> Bool) -> Int {
+//    var sum = 0
+//    for i in numbers {
+//        if closure(i) {
+//            sum += i
+//        }
+//    }
+//    return sum
+//}
+//
+//var a1 = add(numbers : 5,5, -5, closure : {$0 >= 0})
+//print(a1)
+//
+//
+//var a2 = add(numbers: 5, -5, 12, -1, 46, 0, closure: {$0 <= 0})
+//print(a2)
+//
+//
+//var a3 = add(numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9, closure: {$0 % 2 == 0})
+//print(a3)
