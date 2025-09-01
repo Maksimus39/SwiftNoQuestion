@@ -1540,8 +1540,8 @@
 //struct LaptopMacBook {
 //    var name = "MacBook Air M1"
 //    static var countLaptop : Int = 0        // static - делает данное свойство общим для экземпляром структуры
-//    
-//    
+//
+//
 //    init(name: String) {
 //        self.name = name
 //        LaptopMacBook.countLaptop += 1
@@ -1560,8 +1560,8 @@
 //struct Book {
 //    var name : String = "Swift не вопрос"
 //    private var own : Bool                  // private - делает данное свойство частным для экземпляром структуры, и нужно инициализатор задавать самому
-//    
-//    
+//
+//
 //    init(name: String, own: Bool = false) {
 //        self.name = name
 //        self.own = own
@@ -1614,3 +1614,44 @@
 //List2.linesColor = "gray"
 
 
+
+
+
+// ------------------------------------------------------ Методы ------------------------------------------------------
+
+
+//struct Car {
+//    var name : String
+//    var color : String
+//    
+//    func move()  {
+//        print("The \(self.name) - \(self.color) car!")
+//    }
+//}
+//
+//// екземпляр струстуры
+//let carLada = Car(name: "Lada", color: "red")
+//
+//// доступ к методу структуры
+//carLada.move()
+
+
+
+// ------------------------ Метод меняющий свойства ----------------------------------
+
+
+//struct CarTwo {
+//    var name : String
+//    var color : String = "red"
+//    
+//    mutating  func move()  {                                      // mutating - так мы можем изменить свойства
+//        print(self.color = "green")
+//    }
+//}
+//
+//var carTwo = CarTwo(name: "BMW")
+//print(carTwo)
+//
+//carTwo.move()
+//
+//print(carTwo.color)
