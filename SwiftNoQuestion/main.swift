@@ -1623,7 +1623,7 @@
 //struct Car {
 //    var name : String
 //    var color : String
-//    
+//
 //    func move()  {
 //        print("The \(self.name) - \(self.color) car!")
 //    }
@@ -1643,7 +1643,7 @@
 //struct CarTwo {
 //    var name : String
 //    var color : String = "red"
-//    
+//
 //    mutating  func move()  {                                      // mutating - так мы можем изменить свойства
 //        print(self.color = "green")
 //    }
@@ -1655,3 +1655,81 @@
 //carTwo.move()
 //
 //print(carTwo.color)
+
+
+
+
+
+// ----------------------------------------------- Наблюдатели свойств -----------------------------
+
+//struct Car {
+//    var name : String
+//    
+//    static var count = 0 { didSet {
+//        print("Было выпущено \(count) машин")
+//    }
+//    }
+//    
+//    init(name: String) {
+//        self.name = name
+//        Car.count += 1
+//    }
+//}
+//
+//
+//var car1 = Car(name: "Lada")
+//var car2 = Car(name: "BMW")
+
+// -----------------------------------------
+
+//struct Car2 {
+//    var name : String
+//    
+//    static var count = 0 { didSet (i) {
+//      print("""
+//          Было \(i) автомобилей
+//          Стало \(count) автомобилей
+//          """)
+//    }
+//    }
+//    
+//    init(name: String) {
+//        self.name = name
+//        Car2.count += 1
+//    }
+//}
+//
+//
+//var carOne = Car2(name: "Lada")
+//var carTwo = Car2(name: "BMW")
+
+
+
+
+// ------------------------------------- Вычисляемые свойства get и set методы -----------------------------------------
+
+
+//struct Car3 {
+//    var name : String
+//    var rusCount : Int {
+//        if name == "Москвич - 3" {
+//            return 1
+//        } else {
+//            return 0
+//        }
+//    }
+//    
+//    var chiCount : Int {
+//        if name == "JAC IEVS4" {
+//            return 1
+//        } else {
+//            return 0
+//        }
+//    }
+//}
+//
+//var vehicle1 = Car3(name: "Москвич - 3")
+//var vehicle2 = Car3(name: "JAC IEVS4")
+//
+//
+//print(vehicle1.rusCount, vehicle1.chiCount, vehicle2.rusCount, vehicle2.chiCount)
