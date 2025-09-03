@@ -1664,12 +1664,12 @@
 
 //struct Car {
 //    var name : String
-//    
+//
 //    static var count = 0 { didSet {
 //        print("Было выпущено \(count) машин")
 //    }
 //    }
-//    
+//
 //    init(name: String) {
 //        self.name = name
 //        Car.count += 1
@@ -1684,7 +1684,7 @@
 
 //struct Car2 {
 //    var name : String
-//    
+//
 //    static var count = 0 { didSet (i) {
 //      print("""
 //          Было \(i) автомобилей
@@ -1692,7 +1692,7 @@
 //          """)
 //    }
 //    }
-//    
+//
 //    init(name: String) {
 //        self.name = name
 //        Car2.count += 1
@@ -1718,7 +1718,7 @@
 //            return 0
 //        }
 //    }
-//    
+//
 //    var chiCount : Int {
 //        if name == "JAC IEVS4" {
 //            return 1
@@ -1733,3 +1733,119 @@
 //
 //
 //print(vehicle1.rusCount, vehicle1.chiCount, vehicle2.rusCount, vehicle2.chiCount)
+
+
+
+// task 1
+
+//struct List {
+//    var linesCount : Int = 0
+//    var linesColor : String = "White"
+//    var textColor : String = "Black"
+//
+//    func linesCountPrint() {
+//        print("У нас сейчас \(self.linesCount) строки")
+//    }
+//}
+//
+//var listOne = List(linesCount: 3)
+//
+//listOne.linesCountPrint()
+
+
+
+// task 2
+
+//struct List {
+//    var linesCount : Int = 0
+//    var linesColor : String = "White"
+//    var textColor : String = "Black"
+//
+//     func addOneLInes() {
+//         print(self.linesCount)
+//    }
+//}
+//
+//var list1 = List(linesCount: 3)
+//list1.addOneLInes()
+//list1.addOneLInes()
+//list1.addOneLInes()
+
+
+
+// task 3
+
+//struct List {
+//    var linesCount : Int = 0
+//    var linesColor : String = "White"
+//    var textColor : String = "Black"
+//
+//    func linesCountPrint(){
+//        print(self.linesCount)
+//    }
+//
+//
+//    mutating func addLine(_ NumberOfLines:Int){
+//        self.linesCount += NumberOfLines
+//    }
+//}
+//
+//var list1 = List(linesCount: 3)
+//list1.linesCount += 5
+//list1.linesCountPrint()
+
+
+
+// task 4
+
+//struct List {
+//    var linesCount : Int = 0
+//    var linesColor : String = "White"
+//    var textColor : String = "Black"
+//
+//    func linesCountPrint(){
+//        print(self.linesCount)
+//    }
+//
+//
+//    mutating func addLine(_ NumberOfLines:Int = 1){
+//        self.linesCount += NumberOfLines
+//    }
+//}
+//
+//var list1 = List(linesCount: 3)       // инициализировал с 3 строчками
+//list1.addLine(5)                      // c 5 строками в аргументе
+//list1.addLine()                       // без аргументов
+//list1.linesCountPrint()               // итоговый результат
+
+
+// task 5
+
+//struct List {
+//    var linesCount : Int = 0 { didSet {
+//        print("""
+//            Строка добавлена
+//            Текущее \(self.linesCount) количество строк
+//            """)
+//    }
+//        
+//    }
+//    var linesColor : String = "White"
+//    var textColor : String = "Black"
+//    
+//    func linesCountPrint(){
+//        print(self.linesCount)
+//    }
+//    
+//    
+//    mutating func addLine(_ NumberOfLines:Int = 1){
+//        self.linesCount += NumberOfLines
+//    }
+//}
+//
+//var list1 = List(linesCount: 3)
+//list1.addLine()
+//list1.addLine()
+
+
+
