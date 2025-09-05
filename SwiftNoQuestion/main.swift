@@ -1849,3 +1849,183 @@
 
 
 
+// -------------------------------------------------- Class -------------------------------
+
+
+//class Car {
+//    var name : String
+//    var color : String
+//    
+//    func mowe (){
+//        print("mowing")
+//    }
+//    
+//    init(name: String, color: String) {
+//        self.name = name
+//        self.color = color
+//    }
+//}
+//
+//let myCar = Car(name: "bmw", color: "black")
+//myCar.mowe()
+
+
+
+//class Car {
+//    var name : String?
+//    
+//    init(name: String? = nil) {
+//        self.name = name
+//    }
+//}
+//
+//var car1 = Car()
+//var car2 = Car(name: "bmw")
+//
+//print(car1.name!)
+//print(car2.name!)
+
+
+// task 1
+
+//class Man {
+//    var name : String
+//    var weight : Int
+//    var height : Int
+//    
+//    
+//    init(name: String, weight: Int, height: Int) {
+//        self.name = name
+//        self.weight = weight
+//        self.height = height
+//    }
+//    
+//    
+//    init(name: String) {
+//        self.name = name
+//        self.weight = 0
+//        self.height = 0
+//    }
+//}
+
+// task 2
+
+//let manMaksim = Man(name: "Maksim", weight: 90, height: 173)
+//print(manMaksim.name)
+//
+//
+//let manLarisa = Man(name: "Larisa")
+//print(manLarisa.name)
+
+
+
+
+// ----------------------------------------------------- Доступ к свойствам --------------------------------------------
+
+// доступ осуществляется через точку после создания экземпляра класса
+
+//class Man {
+//    var name : String
+//    var height : Int
+//    var weight : Int
+//    
+//    init() {
+//        self.name = "Друг"
+//        self.height = 0
+//        self.weight = 0
+//    }
+//}
+//
+//var me = Man()
+//print(me.name)
+//
+//me.name = "Maksim"
+//print(me.name)
+//
+//me.weight = 91
+//print(me.weight)
+
+
+// ----------- Ссылочный тип данных ----------------------
+
+//class Man {
+//    var name : String = "Maksim"
+//    var height : Int = 173
+//    var weight : Int = 91
+//
+//    init() {}
+//}
+//
+//
+//var me = Man()
+//var you = me
+//
+//print(me.name)
+//print(you.name)
+
+
+// Я меняю у одного экземпляра имя!
+//me.name = "Larisa"
+
+// Что теперь получается?
+//print(me.name)
+//print(you.name) // В обоих случаях у экземпляров сменилось имя, так как это класс у структуры так не работает и создаётся новый экземпляр в ячейке памяти
+//
+//
+//
+//var wei = Man()
+//var wei2 = Man()
+//
+//print(wei.weight == wei2.weight)
+//
+//
+//wei.weight = 91
+//
+//print(wei.weight)
+//print(wei2.weight)
+//
+//print(wei.weight == wei2.weight)
+
+
+
+
+// ------------------------------------- Свойства типа ---------------------------------------------
+
+
+//class Car {
+//    var name : String
+//    static var count = 0
+//    
+//    init(name: String) {
+//        self.name = name
+//        Car.count += 1
+//    }
+//}
+//
+//var bmw = Car(name: "BMW")
+//var toyota = Car(name: "Toyota")
+//
+//print(Car.count)
+
+
+
+
+// ------------------------------------- Методы ---------------------------------------------
+
+//class Car {
+//    var name : String
+//    var color : String
+//    
+//    init(name: String, color: String) {
+//        self.name = name
+//        self.color = color
+//    }
+//    
+//    func move(){print("moving")}
+//}
+//
+//var bmw = Car(name: "BMW", color: "White")
+//bmw.move()
+//
+//print("The car \(bmw.name) is \(bmw.color) color")
+
