@@ -1828,16 +1828,16 @@
 //            Текущее \(self.linesCount) количество строк
 //            """)
 //    }
-//        
+//
 //    }
 //    var linesColor : String = "White"
 //    var textColor : String = "Black"
-//    
+//
 //    func linesCountPrint(){
 //        print(self.linesCount)
 //    }
-//    
-//    
+//
+//
 //    mutating func addLine(_ NumberOfLines:Int = 1){
 //        self.linesCount += NumberOfLines
 //    }
@@ -1855,11 +1855,11 @@
 //class Car {
 //    var name : String
 //    var color : String
-//    
+//
 //    func mowe (){
 //        print("mowing")
 //    }
-//    
+//
 //    init(name: String, color: String) {
 //        self.name = name
 //        self.color = color
@@ -1873,7 +1873,7 @@
 
 //class Car {
 //    var name : String?
-//    
+//
 //    init(name: String? = nil) {
 //        self.name = name
 //    }
@@ -1892,15 +1892,15 @@
 //    var name : String
 //    var weight : Int
 //    var height : Int
-//    
-//    
+//
+//
 //    init(name: String, weight: Int, height: Int) {
 //        self.name = name
 //        self.weight = weight
 //        self.height = height
 //    }
-//    
-//    
+//
+//
 //    init(name: String) {
 //        self.name = name
 //        self.weight = 0
@@ -1928,7 +1928,7 @@
 //    var name : String
 //    var height : Int
 //    var weight : Int
-//    
+//
 //    init() {
 //        self.name = "Друг"
 //        self.height = 0
@@ -1995,7 +1995,7 @@
 //class Car {
 //    var name : String
 //    static var count = 0
-//    
+//
 //    init(name: String) {
 //        self.name = name
 //        Car.count += 1
@@ -2015,12 +2015,12 @@
 //class Car {
 //    var name : String
 //    var color : String
-//    
+//
 //    init(name: String, color: String) {
 //        self.name = name
 //        self.color = color
 //    }
-//    
+//
 //    func move(){print("moving")}
 //}
 //
@@ -2029,3 +2029,76 @@
 //
 //print("The car \(bmw.name) is \(bmw.color) color")
 
+
+
+
+// ----------------------- Для доступа к свойствам экземпляра класса используется оператор self -------------
+
+
+//class Car {
+//    var name : String
+//    var color : String
+//
+//    init(name: String, color: String) {
+//        self.name = name
+//        self.color = color
+//    }
+//
+//    func move(){
+//        print("\(self.name) and \(self.color) is moving")
+//    }
+//}
+//
+//let vehicle = Car(name: "BMW", color: "White")
+//vehicle.move()
+
+
+
+// ----------------------------------- Метод изменяющий свойства ---------------------------------------------
+
+//class Car {
+//    var name : String
+//    var color : String
+//
+//
+//    init(name: String, color: String) {
+//        self.name = name
+//        self.color = color
+//    }
+//
+//    func makeRus (color : String, name : String) {
+//        self.color = color
+//        self.name = name
+//    }
+//}
+//
+//var car = Car(name: "Toyota", color: "White")
+//car.makeRus(color: "blue", name: "BMW")
+//print(car.color)
+//print(car.name)
+
+
+
+// ----------------------------------- Наблюдатель свойств ---------------------------------------------
+
+//class Car {
+//    var name : String
+//    
+//    static var count : Int = 0 { didSet {
+//        print("There were \(count) cars")
+//    }
+//    }
+//    
+//    init(name: String) {
+//        self.name = name
+//        Car.count += 1
+//    }
+//}
+//
+//let car = Car(name: "Toyota")
+//let car2 = Car(name: "Mazda")
+//let car3 = Car(name: "BMW")
+//let car4 = Car(name: "Lada")
+//let car5 = Car(name: "Suzuki")
+//
+//print(Car.count)
