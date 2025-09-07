@@ -2102,3 +2102,79 @@
 //let car5 = Car(name: "Suzuki")
 //
 //print(Car.count)
+
+
+
+
+// ----------------------------------------- Вычисляемые свойства get и set методы ------------------------------------------------------------
+
+
+//class Car {
+//    var name : String
+//    
+//    var rusCount : Int {
+//        if name == "Lada" {
+//            return 1
+//        } else {
+//            return 0
+//        }
+//    }
+//    
+//    var chiCount : Int {
+//        if name == "Chery" {
+//            return 1
+//        } else {
+//            return 0
+//        }
+//    }
+//    
+//    init(name: String) {
+//        self.name = name
+//    }
+//}
+//
+//var car1 = Car(name: "Lada")
+//var car2 = Car(name: "Chery")
+//
+//print(car1.rusCount, car1.chiCount)
+//print(car2.rusCount, car2.chiCount)
+
+//class Car {
+//    var name : String
+//    var other : Int = 0
+//    
+//    var rusCount : Int {
+//        get {
+//            if name == "Москвич - 3" {
+//                return 1
+//            } else {
+//                return 0
+//            }
+//        }
+//        set {
+//            if self.name != "Москвич - 3" {
+//                other += 1
+//            }
+//        }
+//    }
+//    
+//    init(name: String, other: Int) {
+//        self.name = name
+//        self.other = other
+//    }
+//}
+//
+//var vehicle1 = Car(name: "Москвич - 3", other: 0)
+//print(vehicle1.rusCount, vehicle1.other)
+//
+//vehicle1.rusCount = 10
+//print(vehicle1.rusCount, vehicle1.other)
+//
+//vehicle1.name = "BMW"
+//print(vehicle1.rusCount, vehicle1.other)
+//
+//vehicle1.rusCount = 99
+//print(vehicle1.rusCount, vehicle1.other)
+
+
+// task 1
