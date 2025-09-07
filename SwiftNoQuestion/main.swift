@@ -2083,12 +2083,12 @@
 
 //class Car {
 //    var name : String
-//    
+//
 //    static var count : Int = 0 { didSet {
 //        print("There were \(count) cars")
 //    }
 //    }
-//    
+//
 //    init(name: String) {
 //        self.name = name
 //        Car.count += 1
@@ -2111,7 +2111,7 @@
 
 //class Car {
 //    var name : String
-//    
+//
 //    var rusCount : Int {
 //        if name == "Lada" {
 //            return 1
@@ -2119,7 +2119,7 @@
 //            return 0
 //        }
 //    }
-//    
+//
 //    var chiCount : Int {
 //        if name == "Chery" {
 //            return 1
@@ -2127,7 +2127,7 @@
 //            return 0
 //        }
 //    }
-//    
+//
 //    init(name: String) {
 //        self.name = name
 //    }
@@ -2142,7 +2142,7 @@
 //class Car {
 //    var name : String
 //    var other : Int = 0
-//    
+//
 //    var rusCount : Int {
 //        get {
 //            if name == "Москвич - 3" {
@@ -2157,7 +2157,7 @@
 //            }
 //        }
 //    }
-//    
+//
 //    init(name: String, other: Int) {
 //        self.name = name
 //        self.other = other
@@ -2178,3 +2178,189 @@
 
 
 // task 1
+
+
+//class List {
+//    var linesCount : Int
+//    var linesColor : String
+//    var textColor : String
+//
+//    func linesCountPrint () {
+//        print(self.linesCount)
+//    }
+//
+//    init(linesCount: Int, linesColor: String = "white", textColor: String = "black") {
+//        self.linesCount = linesCount
+//        self.linesColor = linesColor
+//        self.textColor = textColor
+//    }
+//}
+//
+//
+//var list1 = List(linesCount: 9)
+//list1.linesCountPrint()
+
+
+
+
+// task 2
+
+//class List {
+//    var linesCount : Int
+//    var linesColor : String
+//    var textColor : String
+//
+//    func linesCountPrint () {
+//        print(self.linesCount)
+//    }
+//
+//
+//    func addLinesCount( count: Int = 1 ){
+//         self.linesCount += count
+//    }
+//
+//    init(linesCount: Int, linesColor: String = "white", textColor: String = "black") {
+//        self.linesCount = linesCount
+//        self.linesColor = linesColor
+//        self.textColor = textColor
+//    }
+//}
+//
+//
+//var list1 = List(linesCount: 3)
+//
+//list1.addLinesCount(count: 5)
+//list1.addLinesCount()
+//
+//list1.linesCountPrint()
+
+
+
+// task 3
+
+//class List {
+//    static  var linesCount : Int = 0 { didSet (i) {
+//        print("""
+//            Добавлено новых \(linesCount - i) строк
+//            Итоговое количество \(self.linesCount) строк
+//            """)
+//    }
+//    }
+//    var linesColor : String
+//    var textColor : String
+//
+//    func linesCountPrint () {
+//        print(List.linesCount)
+//    }
+//
+//    func addLinesCount( count: Int = 1 ){
+//        List.linesCount += count
+//    }
+//
+//    init(linesCount: Int, linesColor: String = "white", textColor: String = "black") {
+//        List.linesCount = linesCount
+//        self.linesColor = linesColor
+//        self.textColor = textColor
+//    }
+//}
+//
+//var list1 = List(linesCount: 3)
+//list1.addLinesCount()
+//list1.addLinesCount(count: 5)
+
+
+
+// ----------------------------------------- Наследование -------------------------------------
+
+//class Car {
+//    var name : String
+//    var color : String
+//
+//    func move(newColor:String){
+//        self.color = newColor
+//        print("Цвет изменён на \(newColor)")
+//    }
+//
+//    init(name: String, color: String) {
+//        self.name = name
+//        self.color = color
+//    }
+//}
+//
+//class Sedan : Car {
+//
+//
+//}
+//
+//var c = Sedan(name: "Lexus", color: "black")
+//print(c.color)
+//print(c.name)
+//c.move(newColor: "red")
+
+
+//class Crossover : Car {
+//    var whellsDrive : String
+//
+//    override  func move(newColor color : String) {
+//        super.move(newColor: color)
+//    }
+//
+//    init(name:String, color:String, whellsDrive:String) {
+//        self.whellsDrive = whellsDrive
+//
+//        super.init(name: name, color: color)
+//    }
+//}
+//
+//var cross = Crossover(name: "Toyota", color: "white", whellsDrive: "Full")
+//print(cross.whellsDrive)
+//cross.move(newColor: "Red" )
+
+
+//class Crossower : Car {
+//    var whellsDrive = "full"
+//
+//    override func move(newColor: String) {
+//        super.move(newColor: newColor)
+//    }
+//
+//    init(manufactured:String, paint:String, wd:String) {
+//        self.whellsDrive = wd
+//
+//        super.init(name: manufactured, color: paint)
+//    }
+//}
+//
+//var car2 = Crossower(manufactured: "Rolls-Royce", paint: "double black", wd: "FWD")
+//car2.move(newColor: "double red")
+
+
+
+
+// task 1
+
+//class User {
+//    var name : String
+//    var phoneNumber : Int
+//    
+//    init(name: String, phoneNumber: Int) {
+//        self.name = name
+//        self.phoneNumber = phoneNumber
+//    }
+//}
+//
+//var userMaksim = User(name: "Maksim", phoneNumber: 89005918910)
+//print("У пользователя \(userMaksim.name), номер мобильного телефона \(userMaksim.phoneNumber).")
+//
+//class PremiumUser : User {
+//    var discountAmount : Int
+//    
+//    init(name: String, phoneNumber: Int, discountAmount:Int) {
+//        self.discountAmount = discountAmount
+//        
+//        super.init(name: name, phoneNumber: phoneNumber)
+//    }
+//}
+//
+//var premiumUserDiscont = PremiumUser(name: "Larisa", phoneNumber: 89005918911, discountAmount: 10)
+//print("А у пользователя \(premiumUserDiscont.name), номер мобильного телефона \(premiumUserDiscont.phoneNumber) и размер скидки составляет \(premiumUserDiscont.discountAmount) %")
