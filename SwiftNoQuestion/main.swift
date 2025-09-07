@@ -2342,7 +2342,7 @@
 //class User {
 //    var name : String
 //    var phoneNumber : Int
-//    
+//
 //    init(name: String, phoneNumber: Int) {
 //        self.name = name
 //        self.phoneNumber = phoneNumber
@@ -2354,13 +2354,56 @@
 //
 //class PremiumUser : User {
 //    var discountAmount : Int
-//    
+//
 //    init(name: String, phoneNumber: Int, discountAmount:Int) {
 //        self.discountAmount = discountAmount
-//        
+//
 //        super.init(name: name, phoneNumber: phoneNumber)
 //    }
 //}
 //
 //var premiumUserDiscont = PremiumUser(name: "Larisa", phoneNumber: 89005918911, discountAmount: 10)
 //print("А у пользователя \(premiumUserDiscont.name), номер мобильного телефона \(premiumUserDiscont.phoneNumber) и размер скидки составляет \(premiumUserDiscont.discountAmount) %")
+
+
+
+
+
+
+
+// --------------------------------------------------- Ленивые свойства ------------------------------------------------------------
+
+
+//class Details {
+//    var electronics = ["chips", "a lot of stuff"]
+//}
+//
+//class Car {
+//    var name : String = "Lada"
+//    lazy  var details = Details()
+//}
+//
+//// Проверка
+//let myCar = Car()
+//print(myCar.name) // "Lada"
+//
+//// Lazy property инициализируется только при первом обращении
+//print(myCar.details.electronics) // ["chips", "a lot of stuff"]
+
+
+// -------------------------------------------------- Переопределение наследуемых свойств и методов ---------------------------------
+
+//class Car {
+//    var name : String {return "Lada"}
+//}
+//
+//class Sedan : Car {
+//    override var name : String {return "Lada granta"}
+//}
+//
+//var carLada = Sedan()
+//print("carLada.name -> \(carLada.name)")
+//
+//
+//var carLada2 = Car()
+//print("carLada2.name -> \(carLada2.name)")
