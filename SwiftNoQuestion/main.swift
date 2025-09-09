@@ -2407,3 +2407,150 @@
 //
 //var carLada2 = Car()
 //print("carLada2.name -> \(carLada2.name)")
+
+
+
+// ----------------------------------- Переопределение свойства
+
+//class Car {
+//    var name : String {return "Lada"}
+//}
+//
+//class Sedan : Car {
+//    override var name: String {
+//        return super.name + " granta"
+//    }
+//}
+//
+//var carLada = Sedan()
+//print(carLada.name)
+
+
+// ----------------------------------- Переопределение метода
+
+//class Car {
+//    func move(){print("moving car")}
+//}
+//
+//class Sedan : Car {
+//    override func move() {
+//        print("moving along the country road")
+//    }
+//}
+//
+//var carLada = Sedan()
+//carLada.move()
+
+
+//  -------------------------------- если поставить final то нельзя будет делать наследование
+
+//final class Car {
+//    func move(){print("movieng")}
+//}
+//
+//let car = Car()
+//car.move()
+
+
+//  -------------------------------- если поставить final то нельзя будет делать наследование свойств или методов
+
+
+//class Car {
+//    final var name : String {return "Lada"}
+//}
+//
+//let car = Car()
+//print(car.name)
+
+
+// ------------------------------- переопределение инициализатора ---------------------------
+
+
+//class Car {
+//    var name : String = "Универсал"
+//}
+//
+//class Crossover :Car {
+//    override init() {
+//        super.init()
+//        self.name = "Кроссовер"
+//    }
+//}
+//
+//let car = Crossover()
+//print(car.name)
+
+
+// ------------------------- Протоколы и расштрения -----------------------
+
+//struct Car {
+//    var name: String?
+//}
+//
+//extension Car {
+//    var color: String {
+//        return "Black"
+//    }
+//
+//    func move() {
+//        print("moving")
+//    }
+//}
+//
+//// Создаем экземпляр с опциональным именем
+//var car = Car(name: "BMW")
+//
+//// Используем свойства и методы
+//print(car.color) // Выведет: Black
+//print(car.name ?? "No name") // Выведет: BMW (с обработкой опционала)
+
+
+
+//protocol oneCarParametrs {
+//    var name: String? { get }
+//    func move()
+//}
+//
+//struct Crossover : oneCarParametrs {
+//    var name: String? = "Lada vesta"
+//
+//    func move() {
+//        print("moving")
+//    }
+//}
+//
+//let a = Crossover()
+//print(a.name!)
+
+
+// task 1
+
+//extension Int {
+//    var cube: Int {
+//        return self * self * self
+//    }
+//}
+//
+//print(3.cube)
+
+
+// task 2
+
+//extension Bool {
+//    
+//    func normalno(){
+//        if self == true {
+//            print("Да")}
+//        else {
+//            print("Нет")
+//        }
+//    }
+//}
+//
+//true.normalno()
+//false.normalno()
+
+
+
+
+
