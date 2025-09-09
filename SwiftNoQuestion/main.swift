@@ -2553,4 +2553,14 @@
 
 
 
+// ------------------------------------------------------ Перечисления ------------------------------------
 
+//enum Days {
+//    case Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+//}
+//
+//var dayMonday = Days.Monday
+//print(dayMonday)
+//
+//dayMonday = .Tuesday
+//print(dayMonday)
