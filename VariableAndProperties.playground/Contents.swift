@@ -127,3 +127,22 @@
 //
 //var res = GlobalStringUser()
 //print(res.computeGlobalString)
+
+
+
+
+// 2.7 Свойства типов ---------------------------
+
+//class Animal {
+//    class var noice: String {
+//        return "Animal noise"
+//    }
+//}
+//
+//class Pig: Animal {
+//    override class var noice: String {
+//        return "Oink oink"
+//    }
+//}
+//
+//var res = Pig()
