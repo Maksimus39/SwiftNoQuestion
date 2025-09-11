@@ -94,3 +94,36 @@
 //circle.circumference = 14
 //print(circle.radius)
 
+
+
+// 2.6 Локальные и глобальные переменные
+
+//let localString : String = "Hello, world!"
+//
+//func printSomething() {
+//    print(localString)
+//}
+//
+//printSomething()
+//
+//
+//func printSomethingAgain() {
+//    print(localString)
+//}
+//
+//printSomethingAgain()
+//
+//
+//for i in 0...2 {
+//    print(localString)
+//}
+//
+//
+//class GlobalStringUser {
+//    var computeGlobalString: String {
+//        return localString
+//    }
+//}
+//
+//var res = GlobalStringUser()
+//print(res.computeGlobalString)
