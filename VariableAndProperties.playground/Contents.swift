@@ -146,3 +146,14 @@
 //}
 //
 //var res = Pig()
+
+
+
+
+// 4.5 Реверсирование сторок
+
+//let aString = "This is a test string"
+//let reversedString = String(aString.reversed())
+
+
+
