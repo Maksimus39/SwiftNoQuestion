@@ -156,4 +156,16 @@
 //let reversedString = String(aString.reversed())
 
 
+// 6.1
 
+//var arrayOfString = [String]()
+//
+//let arrayOfInt: [Int] = [1, 2, 3, 4, 5]
+
+
+// 6.3 Reduce
+
+//let numbers = [2,5,7,8,10,4]
+//let sum = numbers.reduce(0) {accumulator, element in
+//    return accumulator + element
+//}
